@@ -1,0 +1,1332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag (contains Google-Analytics、Baidu-Tongji)-->
+<head>
+  <!-- Google Analytics -->
+  
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-xxxxxx-xx"></script>
+    <script type="text/javascript">
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'UA-xxxxxx-xx');
+    </script>
+  
+
+  <!-- Baidu Tongji -->
+  
+    <script type="text/javascript">
+      // Originial
+      var _hmt = _hmt || [];
+      (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+      })();
+    </script>
+  
+
+  <!-- Baidu Push -->
+  
+    <script>
+      (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+          bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+          bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+      })();
+    </script>
+  
+
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+  <meta name="google-site-verification" content="lxDfCplOZbIzjhG34NuQBgu2gdyRlAtMB4utP5AgEBc"/>
+  <meta name="baidu-site-verification" content="PpzM9WxOJU"/>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="description" content="It&#39;s an IT blog..."/>
+  <meta name="keyword" content="Bin&#39;s Blog"/>
+  <link rel="shortcut icon" href="/img/avatar/Bin.jpg"/>
+
+  <!-- Place this tag in your head or just before your close body tag. -->
+  <script async="async" defer="defer" src="https://buttons.github.io/buttons.js"></script>
+
+  
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css"/>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/beantech.min.css"/>
+
+    <!-- Pygments Highlight CSS -->
+    <link rel="stylesheet" href="/css/highlight.css"/>
+    <link rel="stylesheet" href="/css/widget.css"/>
+    <link rel="stylesheet" href="/css/rocket.css"/>
+    <link rel="stylesheet" href="/css/signature.css"/>
+    <link rel="stylesheet" href="/css/catalog.css"/>
+    <link rel="stylesheet" href="/css/livemylife.css"/>
+
+    
+      <!-- wave start -->
+      <link rel="stylesheet" href="/css/wave.css"/>
+      <!-- wave end -->
+    
+
+    
+      <!-- top start (article top hot config) -->
+      <link rel="stylesheet" href="/css/top.css"/>
+      <!-- top end -->
+    
+
+    
+      <!-- ThemeColor start -->
+      <link rel="stylesheet" href="/css/scroll.css"/>
+      <!-- ThemeColor end -->
+    
+
+    
+      <!-- viewer start (Picture preview) -->
+      <link rel="stylesheet" href="/css/viewer.min.css"/>
+      <!-- viewer end -->
+    
+
+    
+      <!-- Search start -->
+      <link rel="stylesheet" href="/css/search.css"/>
+      <!-- Search end -->
+    
+
+    
+      <!-- ThemeColor start -->
+      <link rel="stylesheet" href="/css/themecolor.css"/>
+      <!-- ThemeColor end -->
+    
+
+    
+
+    
+      <!-- gitalk start -->
+      <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css"> -->
+      <link rel="stylesheet" href="/css/gitalk.css"/>
+      <!-- gitalk end -->
+    
+  
+
+  <!-- Custom Fonts -->
+  <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+  <!-- Hux change font-awesome CDN to qiniu -->
+  <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.5.0/css/font-awesome.min.css" type="text/css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Hux Delete, sad but pending in China <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'> <link
+  href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/ css'> -->
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script> <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script> <![endif]-->
+
+  <!-- ga & ba script hoook -->
+  <link rel="canonical" href="http://yoursite-url/2022/01/13/子空间学习(3)-LE/">
+  <title>
+    
+      子空间学习(3)-LE - Bin&#39;s Blog
+    
+  </title>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<!-- hack iOS CSS :active style -->
+
+	<body ontouchstart="" class="body--light body--light">
+
+
+		<!-- ThemeColor -->
+		
+		<!-- ThemeColor -->
+<style type="text/css">
+  .body--light {
+    --light-mode: none;
+    --dark-mode: block;
+  }
+  .body--dark {
+    --light-mode: block;
+    --dark-mode: none;
+  }
+  i.mdui-icon.material-icons.light-mode {
+    display: var(--light-mode);
+  }
+  i.mdui-icon.material-icons.dark-mode {
+    display: var(--dark-mode);
+  }
+</style>
+<div class="toggle" onclick="document.body.classList.toggle('body--dark')">
+  <i class="mdui-icon material-icons light-mode"></i>
+  <i class="mdui-icon material-icons dark-mode"></i>
+</div>
+<script>
+  //getCookieValue
+  function getCookieValue(a) {
+    var b = document.cookie.match('(^|[^;]+)\\s*' + a + '\\s*=\\s*([^;]+)');
+    return b
+      ? b.pop()
+      : '';
+  }
+  let themeMode = 'light';
+  if (getCookieValue('sb-color-mode') && (getCookieValue('sb-color-mode') !== themeMode)) {
+    let dbody = document.body.classList;
+    themeMode === 'dark' ? dbody.remove('body--dark') : dbody.add('body--dark');
+  }
+
+  //setCookieValue
+  var toggleBtn = document.querySelector(".toggle");
+  toggleBtn.addEventListener("click", function () {
+    var e = document.body.classList.contains("body--dark");
+    var cookieString = e
+      ? "dark"
+      : "light";
+    var exp = new Date();
+    exp.setTime(exp.getTime() + 3 * 24 * 60 * 60 * 1000); //3天过期
+    document.cookie = "sb-color-mode=" + cookieString + ";expires=" + exp.toGMTString() + ";path=/";
+  });
+</script>
+
+		
+
+		<!-- Gitter -->
+		
+		<!-- Gitter -->
+<!-- Docs:https://gitter.im/?utm_source=left-menu-logo -->
+<script>
+  ((window.gitter = {}).chat = {}).options = {
+    room: 'your-community/your-room'
+  };
+</script>
+<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+
+		
+
+		<!-- Navigation (contains search)-->
+		<!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header page-scroll">
+      <button type="button" class="navbar-toggle">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">An Ordinary Life</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <!-- Known Issue, found by Hux: <nav>'s height woule be hold on by its content. so, when navbar scale out, the <nav> will cover tags. also mask any touch event of tags, unfortunately. -->
+    <div id="huxblog_navbar">
+      <div class="navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="/">HOME</a>
+          </li>
+
+          
+          
+          <li>
+            <a href="/about/">
+              
+              ABOUT
+              
+              
+            </a>
+          </li>
+          
+          
+          
+          <li>
+            <a href="/categories/">
+              
+              CATEGORIES
+              
+              
+            </a>
+          </li>
+          
+          
+          
+          <li>
+            <a href="/archive/">
+              
+              ARCHIVES
+              
+              
+            </a>
+          </li>
+          
+          
+          
+          <li>
+            <a href="/tags/">
+              
+              TAGS
+              
+              
+            </a>
+          </li>
+          
+          
+          
+          
+
+          
+          <li>
+            <a class="popup-trigger">
+              <span class="search-icon"></span>SEARCH</a>
+          </li>
+          
+
+          <!-- LangSelect -->
+          
+        </ul>
+      </div>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container -->
+</nav>
+<!-- progress -->
+<div id="progress">
+  <div class="line" style="width: 0%;"></div>
+</div>
+
+<script>
+  // Drop Bootstarp low-performance Navbar Use customize navbar with high-quality material design animation in high-perf jank-free CSS3 implementation
+  var $body = document.body;
+  var $toggle = document.querySelector('.navbar-toggle');
+  var $navbar = document.querySelector('#huxblog_navbar');
+  var $collapse = document.querySelector('.navbar-collapse');
+
+  $toggle.addEventListener('click', handleMagic)
+
+  function handleMagic(e) {
+    if ($navbar.className.indexOf('in') > 0) {
+      // CLOSE
+      $navbar.className = " ";
+      // wait until animation end.
+      setTimeout(function() {
+        // prevent frequently toggle
+        if ($navbar.className.indexOf('in') < 0) {
+          $collapse.style.height = "0px"
+        }
+      }, 400)
+    } else {
+      // OPEN
+      $collapse.style.height = "auto"
+      $navbar.className += " in";
+    }
+  }
+</script>
+
+
+		<!-- Post Header (contains intro-header、signature、wordcount、busuanzi、waveoverlay) -->
+		<!-- Modified by Yu-Hsuan Yen -->
+<!-- Post Header -->
+
+  <style type="text/css">
+    .body--light {
+      /* intro-header */
+      --intro-header-background-image-url-home: url('/img/header_img/newhome_bg.jpg');
+      --intro-header-background-image-url-post: url('/img/header_img/lml_bg.jpg');
+      --intro-header-background-image-url-page: url('//img/header_img/lml_bg.jpg');
+    }
+    .body--dark {
+      --intro-header-background-image-url-home: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('/img/header_img/newhome_bg.jpg');
+      --intro-header-background-image-url-post: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('/img/header_img/lml_bg.jpg');
+      --intro-header-background-image-url-page: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('//img/header_img/lml_bg.jpg');
+    }
+
+    header.intro-header {
+       /*post*/
+        background-image: var(--intro-header-background-image-url-post);
+        /* background-image: url('/img/header_img/lml_bg.jpg'); */
+      
+    }
+
+    
+  </style>
+
+
+
+
+
+<header class="intro-header">
+  <!-- Signature -->
+  <div id="signature">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+          
+          <div class="post-heading">
+            <div class="tags">
+              
+              <a class="tag" href="/tags/#Python" title="Python">Python</a>
+              
+            </div>
+            <h1>子空间学习(3)-LE</h1>
+            <h2 class="subheading">Subspace Learning-LE</h2>
+            <span class="meta">
+              Posted by Mr.Li on
+              2022-01-13
+            </span>
+
+
+            
+            <!-- WordCount start -->
+            <div class="blank_box"></div>
+            <span class="meta">
+              Estimated Reading Time <span class="post-count">12</span> Minutes
+            </span>
+            <div class="blank_box"></div>
+            <span class="meta">
+              Words <span class="post-count">3.1k</span> In Total
+            </span>
+            <div class="blank_box"></div>
+            <!-- WordCount end -->
+            
+            
+
+
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <!-- waveoverlay start -->
+  <div class="preview-overlay">
+    <svg class="preview-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+      <defs>
+        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+      </defs>
+      <g class="preview-parallax">
+        <use xlink:href="#gentle-wave" x="48" y="0" fill=var(--gentle-wave1)></use>
+        <use xlink:href="#gentle-wave" x="48" y="3" fill=var(--gentle-wave2)></use>
+        <use xlink:href="#gentle-wave" x="48" y="5" fill=var(--gentle-wave3)></use>
+        <use xlink:href="#gentle-wave" x="48" y="7" fill=var(--gentle-wave)></use>
+      </g>
+    </svg>
+  </div>
+  <!-- waveoverlay end -->
+  
+
+</header>
+
+
+
+		<!-- Main Content (Post contains
+	Pager、
+	tip、
+	socialshare、
+	gitalk、gitment、disqus-comment、
+	Catalog、
+	Sidebar、
+	Featured-Tags、
+	Friends Blog、
+	anchorjs、
+	) -->
+		<!-- Modify by Yu-Hsuan Yen -->
+<!-- Post Content -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+<article>
+  <div class="container">
+    <div class="row">
+      <!-- Post Container -->
+      <div class="col-lg-8 col-lg-offset-1 col-md-10 col-md-offset-1 post-container">
+
+        <blockquote>
+<p>子空间学习系列主要讨论从PCA发表开始到2010年中，子空间学习相关论文。本文立足于论文：<strong>Laplacian Eigenmaps for Dimensionality Reduction and Data Representation（2003 NC）</strong>。基于此进行概念的梳理和思考，尝试从数学的角度去阐述LE的动机，目标函数和限制等。额，然后本系列的解释应该是中英文混合，私以为用简略的句子生动地描述复杂抽象的概念，需要对算法有着极为深刻的理解和一定的勇气。显然我水平不够，如果强制翻译一些原文的描述和概念，难免不太妥当。</p>
+</blockquote>
+<h1 id="摘要："><a href="#摘要：" class="headerlink" title="摘要："></a>摘要：</h1><p>降维算法出现在信息处理的许多领域，包括机器学习、数据压缩、科学可视化、模式识别和神经计算。 其中，其中，Laplacian Eigenmaps (LE) 是一种用于表示高维数据的几何动机算法，它利用了图 Laplacian、流形上的 Laplace Beltrami 算子以及与热方程的联系之间的对应关系 。LE算法为非线性降维提供了一种计算效率高的方法，保留了局部特性和聚类的一种自然联系。 在本报告中，我们尝试以数学方式解释 LE 的主要思想，并讨论 PCA 、LLE 和 LE 之间的区别。本文的解释会比较简略只提重点部分。需要注意的是本文有下划线的部分是一些需要了解的基础概念，由于篇幅，我就不在后面解释，望读者自行查阅。</p>
+<h1 id="Question-amp-Answer："><a href="#Question-amp-Answer：" class="headerlink" title="Question&amp;Answer："></a>Question&amp;Answer：</h1><h2 id="假设"><a href="#假设" class="headerlink" title="假设"></a>假设</h2><p>LE 假设数据是从平滑、紧凑的<u>黎曼流形</u>中采样的，并且流形上有均匀的概率分布。进一步来说，</p>
+<ul>
+<li><p>数据是从光滑、紧凑的<u>黎曼流形</u>中采样的<u>光滑流形</u>，即数据是无限可微的。更具体地说，从流形到低维空间的映射 $f:\mathbb{M} \rightarrow \mathbb{R}$ 是两次可微的</p>
+<script type="math/tex; mode=display">
+\begin{gathered}
+            f^{\prime \prime}(x)=\lim _{\Delta x \rightarrow 0} \frac{f^{\prime}\left(x_{0}+\Delta x\right)-f^{\prime}\left(x_{0}\right)}{\Delta x}.
+        \end{gathered}</script></li>
+<li><p>流形上有一个均匀的概率分布，即采样密度使得每个数据点具有 $2d$  邻居的数量级，这些邻居在流形上相对于输入空间中的某个度量定义了一个大致线性的补丁。</p>
+</li>
+</ul>
+<h2 id="解决的问题"><a href="#解决的问题" class="headerlink" title="解决的问题"></a>解决的问题</h2><p>LE 试图通过使用图拉普拉斯算子之间的对应关系来为位于嵌入高维空间的低维流形上的数据构建表示，从而降低平滑、紧凑的黎曼流形的维数。</p>
+<h2 id="理解LE算法中的拉普拉斯映射"><a href="#理解LE算法中的拉普拉斯映射" class="headerlink" title="理解LE算法中的拉普拉斯映射"></a>理解LE算法中的拉普拉斯映射</h2><h3 id="拉普拉斯图"><a href="#拉普拉斯图" class="headerlink" title="拉普拉斯图"></a>拉普拉斯图</h3><p>LE 中的<u>拉普拉斯算子</u>是指 LE 计算数据集的低维表示，该表示通过使用拉普拉斯矩阵 $L$ 的概念在某种意义上最优地保留了局部邻域信息。拉普拉斯矩阵可以用两个矩阵之间的差来表示，</p>
+<script type="math/tex; mode=display">
+L=D-W</script><p>其中$W$是使用一些策略来连接的邻接矩阵（参见之后的具体步骤），$D$是一个对角矩阵，其对角元素为度数（$D_{ii}=\ sum^{n}_{j=1}W_{ij}$)。此外，流形拉普拉斯算子有几种可能的近似方案，例如，我们可以计算具有以下权重的图拉普拉斯算子，</p>
+<script type="math/tex; mode=display">
+W_{ij}=\begin{cases}
+    H_{t}(x_{i}, x_{j})e^{-\frac{\|x_{i}-x_{j}\|^{2}}{4t}} & \text{ if }\|x_{i}-x_{j}\|< \epsilon \\
+    0 & otherwise
+    \end{cases},</script><p>其中 $t \in \mathbb{R}$, $\epsilon \in \mathbb{R}$ ，$H_{t}$ 是热核函数。</p>
+<h3 id="映射"><a href="#映射" class="headerlink" title="映射"></a>映射</h3><p>在解释特征映射之前，我们应该了解什么是<u>映射</u>和<u>特征分解</u>。LE 中的特征映射是指数据的嵌入映射近似于<u>Laplace Beltrami 算子</u>的特征映射，它们是在整个流形上本质上定义的映射。 从<u>流形</u>的定义，数据的特征映射$f$如下所示：</p>
+<script type="math/tex; mode=display">
+ \forall x_{i} \ \exists x_{U(i)}: \ \Phi(x_{U(i)})\rightarrow (f_{1}(i), \cdots, f_{m}(i)) \ (f \subseteq \mathbb{R}^{n}),</script><p>其中 $f=[f_{0}, f_{1}, \cdots, f_{k-1}]$ 是拉普拉斯图的特征映射。</p>
+<h2 id="目标函数"><a href="#目标函数" class="headerlink" title="目标函数"></a>目标函数</h2><p>LLE的目标函数是为了最小化重构损失，最大程度的保持数据之间的局部关系（为什么保持数据间的局部关系可以进行更好的降维？下一个回答将解释）：</p>
+<script type="math/tex; mode=display">
+\begin{gathered}
+        \arg \min_{Y^{T}}\Phi(Y)=tr(Y^{T}LY) \\
+        \text{ s.t. } Y^{T} D Y=I_{d\times d},\textbf{y}_{i}^{T}D\textbf{1}_{1\times d}=0,
+    \end{gathered}\tag{1}</script><p>其中 $L=D-W$, $D$ ($D_{ii}=\sum_{j=1}^{n}W_{ij}$) 和 $w$ 是对称的，$d$是降维之后数据集的维度，$Y=[\textbf{y}_{1}, \textbf{y}_{2}, \cdots, \textbf{y}_{n}]$是降维后的数据集。</p>
+<h2 id="算法流程"><a href="#算法流程" class="headerlink" title="算法流程"></a>算法流程</h2><p>给定 $k$ 个数据点 $x_{1}, x_{2}, \cdots, x_{k}$ in $\mathbb{R}^{l}$，我们构建一个有 $k$ 个节点的加权图，每一个节点代表一个数据点，加权图的边表示两个数据点之间的关系。 现在通过计算图拉普拉斯算子的特征向量来构造嵌入图。 算法过程的三个步骤如下所示：</p>
+<h3 id="第-1-步：构建邻接图"><a href="#第-1-步：构建邻接图" class="headerlink" title="第 1 步：构建邻接图"></a>第 1 步：构建邻接图</h3><p>动机：LE 明确考虑了数据可能驻留在其上的流形的局部结构。 因此，LE 构建了一个包含数据邻域信息的邻接图。</p>
+<p>假设：原始数据的构造图是连通的。（当然你可以用一些其他方法让它联通）</p>
+<p>如果 $x_{i}$ 和 $x_{j}$ 满足以下策略的条件，我们将边放在节点 $i$ 和 $j$ 之间。 因此，提出了两种策略：</p>
+<ul>
+<li>$\epsilon$-neighborhoods（参数 $\epsilon \in \mathbb{R}$）： 如果 $|x_{i}-x_{j}|&lt;\epsilon$ ，节点 $i$ 和 $j$ 将会被连接，其中范数通常是在 $\mathbb{R}^{l}$上的欧几里得范数。</li>
+<li>$n$ nearest neighbors：如果 $i$ 位于 $j$ 的 $n$ 个最近邻居中或 $j$ 位于 $i$ 的 $n$ 个最近邻居中，则节点 $i$ 和 $j$ 由一条边连接。 </li>
+</ul>
+<h3 id="第-2-步：选择权重"><a href="#第-2-步：选择权重" class="headerlink" title="第 2 步：选择权重"></a>第 2 步：选择权重</h3><p>在我们构建了邻接图之后，我们需要计算相邻点之间边的权重来构建邻接矩阵$W$，有两种对边进行加权的方法：</p>
+<ul>
+<li>核函数：如果节点 $i$ 和 $j$ 相连，$W_{ij}=e^{-\frac{|x_{i}-x_{j|}^2}{t}}$，否则，$W{ij}$ = 0。稍后将提供这种权重选择的理由。</li>
+<li>Simple-minded：$W_{ij}=1$ 如果顶点 i 和 j 由边连接，$W_{ij}=0$ 如果顶点 $i$ 和 $j$ 没有边连接。 这种简化避免了选择 $t$ 的需要。</li>
+</ul>
+<h3 id="第3步：特征映射"><a href="#第3步：特征映射" class="headerlink" title="第3步：特征映射"></a>第3步：特征映射</h3><p>  由 LE 生成的嵌入映射可以被视为对连续映射的离散近似，连续映射自然产生于流形的几何形状。接下来我们计算得到特征映射，我们需要解决如下<u>特征分解</u>问题，</p>
+<script type="math/tex; mode=display">
+Lf=\lambda Df,</script><p>其中 $D$ 是对角矩阵，其对角线元素的值是 W 的列元素之和（或行，因为 W 是对称的）：$D_{ii}=\sum_{j}W_{ji}$。 $L=D-W$ 是拉普拉斯矩阵。拉普拉斯矩阵是一个对称的半正定矩阵，可以将其视为定义在 G 的顶点上的拉普拉斯算子。设 $f_{0}, f_{1}, \cdots, f_{k-1}$ 是方程的解，根据它们的特征值排序：</p>
+<script type="math/tex; mode=display">
+  Lf_{i}=\lambda Df_{i},\ (0\leq i\leq k-1) \\
+        0=\lambda_{0}\leq\lambda_{1}\leq\cdots\leq\lambda_{k-1}.</script><p>然后，我们去掉对应于特征值 0 的特征向量 $f_{0}$ 并使用接下来的 $m$ 个特征向量嵌入 m 维欧几里得空间：</p>
+<script type="math/tex; mode=display">
+x_{i}\rightarrow (f_{1}(i), \cdots, f_{m}(i)).</script><h2 id="具体的推导过程"><a href="#具体的推导过程" class="headerlink" title="具体的推导过程"></a>具体的推导过程</h2><p>在这一部分，我们展示了 LE 解决方案的细节。给定一个数据集，我们构建一个加权图 $G = (V, E)$，其中边将附近的点彼此连接起来。 为了讨论的目的，假设图是连通的。 设 $Y=[\textbf{y}_{1}, \textbf{y}_{2}, \cdots, \textbf{y}_{n}]$ 是这样的映射，并且 $\textbf{y }=(y_{1}, y_{2}, \cdots, y_{n})^{T}$。 然后，我们可以将目标函数转化为半正定二次型矩阵的迹，如下推导，</p>
+<script type="math/tex; mode=display">
+\begin{aligned}
+        &\ \ \ \ \sum_{i,j}\|y_{i}-y_{j}\|^{2}W_{ij}=\Phi(Y) \\
+        &=\sum_{i=1}^{n}\sum_{j=1}^{n}(y_{i}y_{i}-2y_{i}y_{j}+y_{j}y_{j})W_{ij}\\
+        &\!=\!\sum_{i=1}^{n}\!\left(\!\sum_{j=1}^{n}\!W_{i j}\!\right)\!y_{i} y_{i}\!+\!\sum_{j=1}^{n}\!\left(\!\sum_{i=1}^{n}\!W_{i j}\!\right)\! y_{j} y_{j}\!-\!2\!\sum_{i=1}^{n}\!\sum_{j=1}^{n}\!y_{i}\!y_{j}\!W_{i j}\\
+        &=2 \sum_{i=1}^{n} D_{i i} y_{i}^{2}-2 \sum_{i=1}^{n} \sum_{j=1}^{n} y_{i} y_{j} W_{i j} \\
+        &=2\!\sum_{i=1}^{n}\!\left(\!\sqrt{D_{i i}}\!y_{i}\!\right)^{2}\!-\!2 \sum_{i=1}^{n} y_{i}\!\left(\!\sum_{j=1}^{n} y_{j} W_{ij}\!\right)\! \\
+        &=2 \operatorname{tr}\left(Y^{T} D Y\right)-2 \sum_{i=1}^{n} y_{i}^{T}(Y W)_{i} \\
+        &=2 \operatorname{tr}\left(Y^{T} D Y\right)-2 \operatorname{tr}\left(Y^{T} W Y\right) \\
+        &=2 \operatorname{tr}\left[Y^{T}(D-W) Y\right] \\
+        &=2 \operatorname{tr}\left(Y^{T} L Y\right),
+    \end{aligned}\tag{2}</script><p>其中 $L=D-W$, $D$ ($D_{ii}=\sum_{j=1}^{n}W_{ij}$) 和 $w$ 是对称的。 此外，我们可以向目标函数添加两个约束。 因此，目标函数的优化问题可以由（2）转化（3），</p>
+<script type="math/tex; mode=display">
+ \arg \min_{Y^{T}}\Phi(Y)=tr(Y^{T}LY) \\
+        \text{ s.t. } Y^{T} D Y=I_{d\times d},\textbf{y}_{i}^{T}D\textbf{1}_{1\times d}=0,</script><p>其中 $Y=[\textbf{y}_{1}, \textbf{y}_{2}, \cdots, \textbf{y}_{n}]$。 然后，我们用拉格朗日乘子法求解目标函数，如下所示：</p>
+<script type="math/tex; mode=display">
+\begin{aligned}
+        f(Y)&=\operatorname{tr}\left(Y^{T} L Y\right)+\operatorname{tr}\left[\Lambda\left(Y^{T} D Y-I\right)\right] \\
+        \frac{\partial f(Y)}{\partial Y}&=L Y+L^{T} Y+D^{T} Y \Lambda^{T}+D Y \Lambda \\
+        &=2 L Y+2 D Y \Lambda=0 \\
+        & \ \ \ \ LY=-DY\Lambda,
+    \end{aligned}</script><p>其中 $\lambda$ 是对角矩阵，$L$ 和 $D$ 是实对称矩阵。 对于单个$y_{i}$向量，上式可以写成：$Ly=\lambda Dy$，这是一个广义特征值问题。 通过得到$m$个最小非零特征值对应的特征向量，可以达到降维的目的。</p>
+<h2 id="关于约束条件"><a href="#关于约束条件" class="headerlink" title="关于约束条件"></a>关于约束条件</h2><p>我们解释了两个约束的作用：</p>
+<ul>
+<li><p>去除平移不变性：约束 $\textbf{y}_{i}^{T}D1=0$ 去除平移不变性，以下是推导，</p>
+<script type="math/tex; mode=display">
+ \begin{aligned}
+            \textbf{y}_{i}^{T}D\textbf{1}_{1\times d}&=0 \\
+            \sum_{i}\textbf{y}_{i1}D_{ii}&=0,
+        \end{aligned}</script><p>其中 $D$ 是确定的，所以 $y_{i}$ 是确定的。此外，$D$ 是出入度矩阵，因为 $D$ 提供了对图节点的出入度。</p>
+</li>
+<li><p>消除比例因子：目标函数方程具有伸缩不变性。约束 $Y^{T}DY=I_{d\times d}$ 去除了伸缩不变性，如下推导，</p>
+<script type="math/tex; mode=display">
+\begin{aligned}
+            Y^{T}DY&=I_{d\times d} \\
+            \textbf{y}_{i}^{T}D\textbf{y}_{i}&=1,
+        \end{aligned}</script><p>其中 $D$ 是确定的，所以 $y_{i}$ 是确定的。</p>
+</li>
+<li><p>防止特征图退化到低维空间：我们可以将优化目标函数转化为求解方程中的特征分解问题。为了使特征图不退化到低维空间，我们需要保证方程中不同的特征向量是正交的，见下面的表达式，</p>
+<script type="math/tex; mode=display">
+ \textbf{y}_{i}D\textbf{y}_{j}=0,\ i\neq j.</script><p>因为如果特征向量不是正交的，我们可以找到更少的特征值和特征向量，这会导致特征图退化到低维空间。</p>
+</li>
+</ul>
+<h2 id="讨论"><a href="#讨论" class="headerlink" title="讨论"></a>讨论</h2><h3 id="PCA，LLE和LE的区别"><a href="#PCA，LLE和LE的区别" class="headerlink" title="PCA，LLE和LE的区别"></a>PCA，LLE和LE的区别</h3><h4 id="动机"><a href="#动机" class="headerlink" title="动机"></a>动机</h4><p>PCA 试图通过线性变换 $P$ 来降低数据的维度，即使用正交基的组合来表示原始数据 $A$。 PCA 的目标是最大化数据投影后的方差。</p>
+<p>LLE 正试图通过计算高维数据的低维、邻域保留嵌入 $W$ 来降低平滑流形的维数，然后最小化重构损失。通过局部线性嵌入的处理，LLE 可以处理非线性数据。</p>
+<p>而 LE 正试图通过使用图拉普拉斯算子之间的对应关系来构高维空间数据在低维流形上的数据的表示，目标是最小化重构损失，从而降低数据的维数。</p>
+<h4 id="目标函数-1"><a href="#目标函数-1" class="headerlink" title="目标函数"></a>目标函数</h4><p>我们假设$A$是原始数据，$B$是降维后的数据。 同时，$D$ 是$A$ 的维度，$d$ 是$B$ 的维度。</p>
+<p>PCA 的目标函数是最大化主成分上的方差，即降维后协方差矩阵的对角元素，如下：</p>
+<script type="math/tex; mode=display">
+\begin{equation}
+    \begin{gathered}
+        B=PA,\ AE=ED\ (AE_{i}=D_{ii} E_{i})\\
+        sort(D_{ii}),\ D_{ii}<=D_{jj}\ when \ i<j\\ 
+        P=[E_{1}, E_{2}, \cdots, E_{d}]^{T} \\
+        \arg \max_{P} tr(PAA^{T}P^{T}) = tr(\frac{1}{n} \sum_{i=1}^{n}(PA_{i})^{2})\\
+        \text { s.t. } PP^{T}=I_{d\times d}.
+    \end{gathered}
+\end{equation}</script><p>其中 $E=[E_{1}, E_{2}, \cdots, E_{n}]$ 是特征向量集，$D_{ii}$ 是第 i 个特征向量的特征值。</p>
+<p>LLE 的目标函数是最小化重构误差，如下：</p>
+<script type="math/tex; mode=display">
+\begin{equation}
+    \begin{gathered}
+        \arg \min_{W} E(W) = \sum_{i}|X_{i}-\sum_{j}W_{ij}X_{ij}|^2 \\
+        \arg \min_{Y} \Phi(Y) = \sum_{i}|Y_{i}-\sum_{j}W_{ij}Y_{ij}|^2 \\
+        \text{ s.t. } \sum_{j}W_{ij}=1,\ \sum_{i=1}^{N} Y_{i}=0,\ \sum_{i=1}^{N} Y_{i} Y_{i}^{T}=N I_{d \times d},
+    \end{gathered}
+\end{equation}</script><p>其中 $X=[X_{1}, X_{2}, \cdots, X_{N}]$ 是原始数据，$Y=[Y_{1}, Y_{2}, \cdots, Y_{N} ]$是降维后的数据。 $X_{ij}$ 和 $Y_{ij}$ 分别是 $X_{i}$ 和 $Y_{i}$ 的 $k$ 最近邻。 $W$ 是重构等式中高维输入 $X_{i}$ 的权重。</p>
+<p>LE 的目标函数是最小化重构误差，见公式（1）。</p>
+<h3 id="LE的缺点"><a href="#LE的缺点" class="headerlink" title="LE的缺点"></a>LE的缺点</h3><ul>
+<li>LE 只能用于非封闭流形，样本集需要密集均匀。</li>
+<li>LE对最近邻样本个数的选择很敏感，不同的近邻个数对最终的降维结果影响较大。</li>
+<li>LE 对热核和权重矩阵的选择很敏感。</li>
+</ul>
+<h2 id="实验效果"><a href="#实验效果" class="headerlink" title="实验效果"></a>实验效果</h2><p>由于Sklearn已经对LE做了很多的优化，需要代码的朋友可以之间调库解决。我展示两种写法，一种是照抄原文中对权重矩阵$W$的写法，一种是直接使用Sklearn调库：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> sklearn.manifold <span class="keyword">import</span> spectral_embedding</span><br><span class="line"><span class="keyword">from</span> sklearn.neighbors <span class="keyword">import</span> kneighbors_graph</span><br><span class="line"><span class="keyword">from</span> sklearn.manifold <span class="keyword">import</span> SpectralEmbedding</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">Norm_LE</span>(<span class="params">data, component, neighbor, t</span>):</span></span><br><span class="line">    W = kneighbors_graph(data, neighbor, mode=<span class="string">&#x27;distance&#x27;</span>, include_self=<span class="literal">False</span>)</span><br><span class="line">    W.data[:] = np.exp(-(W.data ** <span class="number">2</span> / (t)))</span><br><span class="line">    maps = spectral_embedding(W, component)</span><br><span class="line">    <span class="keyword">return</span> maps</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">LE</span>(<span class="params">data, train_data, component</span>):</span></span><br><span class="line">    solver = SpectralEmbedding(n_components=component, affinity=<span class="string">&#x27;rbf&#x27;</span>)</span><br><span class="line">    solver.fit(train_data)</span><br><span class="line">    <span class="keyword">return</span> solver.transform(data)</span><br></pre></td></tr></table></figure>
+<p>展示一些实验结果，有可视化的降维结果。我们在瑞士卷上，使用PCA，LLE和LE把数据降到2维。</p>
+<p><img src="/2022/01/13/%E5%AD%90%E7%A9%BA%E9%97%B4%E5%AD%A6%E4%B9%A0(3)-LE/swiss.png" alt="LLE-Val" style="zoom:72%;"></p>
+<center class="half">    <img src="/2022/01/13/%E5%AD%90%E7%A9%BA%E9%97%B4%E5%AD%A6%E4%B9%A0(3)-LE/pca_swiss.png" width="400">    <img src="/2022/01/13/%E5%AD%90%E7%A9%BA%E9%97%B4%E5%AD%A6%E4%B9%A0(3)-LE/isomap_swiss.png" width="400"> </center>
+
+<center class="half">    <img src="/2022/01/13/%E5%AD%90%E7%A9%BA%E9%97%B4%E5%AD%A6%E4%B9%A0(3)-LE/lle_swiss.png" width="400">    <img src="/2022/01/13/%E5%AD%90%E7%A9%BA%E9%97%B4%E5%AD%A6%E4%B9%A0(3)-LE/le_swiss.png" width="400"> </center>
+
+<center style="color:#C0C0C0;text-decoration:underline">图1. PCA（左上）, ISOMAP（右上）, LLE（左下）, LE（右下）在瑞士卷上的效果。</center>
+
+<p>同时我们在MNIST数据集上探究了<strong>LE</strong>算法(<strong>KNN</strong>的$k=1$时)的参数（邻居$n$和参数$t$）变化对效果的影响：</p>
+<p><img src="/2022/01/13/%E5%AD%90%E7%A9%BA%E9%97%B4%E5%AD%A6%E4%B9%A0(3)-LE/parameter.png" alt="LLE-Val" style="zoom:72%;"></p>
+<center style="color:#C0C0C0;text-decoration:underline">图2. 参数变化对LE算法效果的影响。</center>
+
+<p>最后是PCA，LLE和LE在MNIST数据集上降到不同维度，然后进行KNN($k=1$)分类的效果对比：</p>
+<p><img src="/2022/01/13/%E5%AD%90%E7%A9%BA%E9%97%B4%E5%AD%A6%E4%B9%A0(3)-LE/com.png" alt="LLE-Val" style="zoom:110%;"></p>
+<center style="color:#C0C0C0;text-decoration:underline">图3. 三种算法降维后进行分类的准确率。</center>
+
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>其实在复现过程中，并没有达到论文中的效果，我怀疑是降维算法和分类算法参数的选择并没有使效果达到最优。</p>
+
+
+        <hr>
+        <!-- Pager -->
+        <ul class="pager">
+          
+          <li class="previous">
+            <a href="/2022/01/14/子空间学习(4)-LPP&NPE/" data-toggle="tooltip" data-placement="top" title="子空间学习(4)-LPP&NPE">&larr; Previous Post</a>
+          </li>
+          
+          
+          <li class="next">
+            <a href="/2022/01/12/子空间学习(2)-LLE/" data-toggle="tooltip" data-placement="top" title="子空间学习(2)-LLE">Next Post &rarr;</a>
+          </li>
+          
+        </ul>
+
+        
+        <!-- tip start -->
+        <!-- tip -->
+<!-- tip start -->
+<div class="tip">
+  <p>
+    
+      If you like this blog or find it useful for you, you are welcome to comment on it. You are also welcome to share this blog, so that more people can participate in it. If the images used in the blog infringe your copyright, please contact the author to delete them. Thank you !
+    
+  </p>
+</div>
+<!-- tip end -->
+
+        <!-- tip end -->
+        
+
+        
+        <!-- Sharing Srtart -->
+        <!-- Social Social Share Post -->
+<!-- Docs:https://github.com/overtrue/share.js -->
+
+<div class="social-share" data-initialized="true" data-disabled="tencent ,douban ,qzone ,linkedin ,facebook ,google ,diandian" data-wechat-qrcode-helper="" align="center">
+  <ul class="list-inline text-center social-share-ul">
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon icon-twitter">
+        <i class="fa fa-twitter fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a class="social-share-icon icon-wechat">
+        <i class="fa fa-weixin fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon icon-weibo">
+        <i class="fa fa-weibo fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon icon-qq">
+        <i class="fa fa-qq fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon" href="mailto:?subject=子空间学习(3)-LE&body=Hi,I found this website and thought you might like it http://yoursite-url/2022/01/13/子空间学习(3)-LE/">
+        <i class="fa fa-envelope fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+<!-- css & js -->
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css"> -->
+<script defer="defer" async="true" src="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
+
+        <!-- Sharing End -->
+        
+        <hr>
+
+        <!-- comments start -->
+        <!-- 1. gitalk comment -->
+
+  <!-- gitalk start -->
+  <!-- Docs:https://github.com/gitalk/gitalk/blob/master/readme-cn.md -->
+
+  <div id="gitalk-container"></div>
+
+  
+    <!-- <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.js"></script> -->
+    <script src="/js/comment/gitalk.js"></script>
+  
+
+  <script>
+    var gitalk = new Gitalk({
+      clientID: '65682c9d7fede4bb7fc5',
+      clientSecret: '6b9080be7fdcaae6ae9bbd667c4d2af5f16eb118',
+      repo: 'lhb7.github.io',
+      owner: 'lhb7',
+      admin: 'lhb7',
+      id: 'Thu Jan 13 2022 12:24:17 GMT+0800', // Ensure uniqueness and length less than 50
+      distractionFreeMode: false, // Facebook-like distraction free mode
+      perPage: 10,
+      pagerDirection: 'last',
+      createIssueManually: true,
+      language: 'zh-CN',
+      proxy: 'https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token'
+    });
+    gitalk.render('gitalk-container');
+
+    var gtFolded = () => {
+      setTimeout(function () {
+        let markdownBody = document.getElementsByClassName("markdown-body");
+        let list = Array.from(markdownBody);
+        list.forEach(item => {
+          if (item.clientHeight > 250) {
+            item.classList.add('gt-comment-body-folded');
+            item.style.maxHeight = '250px';
+            item.title = 'Click to Expand';
+            item.onclick = function () {
+              item.classList.remove('gt-comment-body-folded');
+              item.style.maxHeight = '';
+              item.title = '';
+              item.onclick = null;
+            };
+          }
+        })
+      }, 800);
+    }
+  </script>
+
+  <!-- gitalk end -->
+
+
+<!-- 2. gitment comment -->
+
+
+<!-- 3. disqus comment -->
+
+
+        <!-- comments end -->
+        <hr>
+
+      </div>
+
+      <!-- Catalog: Tabe of Content -->
+      <!-- Table of Contents -->
+
+    
+      <aside id="sidebar">
+        <div id="toc" class="toc-article">
+        <strong class="toc-title">Contents</strong>
+        
+          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#%E6%91%98%E8%A6%81%EF%BC%9A"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">摘要：</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#Question-amp-Answer%EF%BC%9A"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">Question&amp;Answer：</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E5%81%87%E8%AE%BE"><span class="toc-nav-number">2.1.</span> <span class="toc-nav-text">假设</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E8%A7%A3%E5%86%B3%E7%9A%84%E9%97%AE%E9%A2%98"><span class="toc-nav-number">2.2.</span> <span class="toc-nav-text">解决的问题</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E7%90%86%E8%A7%A3LE%E7%AE%97%E6%B3%95%E4%B8%AD%E7%9A%84%E6%8B%89%E6%99%AE%E6%8B%89%E6%96%AF%E6%98%A0%E5%B0%84"><span class="toc-nav-number">2.3.</span> <span class="toc-nav-text">理解LE算法中的拉普拉斯映射</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#%E6%8B%89%E6%99%AE%E6%8B%89%E6%96%AF%E5%9B%BE"><span class="toc-nav-number">2.3.1.</span> <span class="toc-nav-text">拉普拉斯图</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#%E6%98%A0%E5%B0%84"><span class="toc-nav-number">2.3.2.</span> <span class="toc-nav-text">映射</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E7%9B%AE%E6%A0%87%E5%87%BD%E6%95%B0"><span class="toc-nav-number">2.4.</span> <span class="toc-nav-text">目标函数</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E7%AE%97%E6%B3%95%E6%B5%81%E7%A8%8B"><span class="toc-nav-number">2.5.</span> <span class="toc-nav-text">算法流程</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#%E7%AC%AC-1-%E6%AD%A5%EF%BC%9A%E6%9E%84%E5%BB%BA%E9%82%BB%E6%8E%A5%E5%9B%BE"><span class="toc-nav-number">2.5.1.</span> <span class="toc-nav-text">第 1 步：构建邻接图</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#%E7%AC%AC-2-%E6%AD%A5%EF%BC%9A%E9%80%89%E6%8B%A9%E6%9D%83%E9%87%8D"><span class="toc-nav-number">2.5.2.</span> <span class="toc-nav-text">第 2 步：选择权重</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#%E7%AC%AC3%E6%AD%A5%EF%BC%9A%E7%89%B9%E5%BE%81%E6%98%A0%E5%B0%84"><span class="toc-nav-number">2.5.3.</span> <span class="toc-nav-text">第3步：特征映射</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E5%85%B7%E4%BD%93%E7%9A%84%E6%8E%A8%E5%AF%BC%E8%BF%87%E7%A8%8B"><span class="toc-nav-number">2.6.</span> <span class="toc-nav-text">具体的推导过程</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E5%85%B3%E4%BA%8E%E7%BA%A6%E6%9D%9F%E6%9D%A1%E4%BB%B6"><span class="toc-nav-number">2.7.</span> <span class="toc-nav-text">关于约束条件</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E8%AE%A8%E8%AE%BA"><span class="toc-nav-number">2.8.</span> <span class="toc-nav-text">讨论</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#PCA%EF%BC%8CLLE%E5%92%8CLE%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-nav-number">2.8.1.</span> <span class="toc-nav-text">PCA，LLE和LE的区别</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#%E5%8A%A8%E6%9C%BA"><span class="toc-nav-number">2.8.1.1.</span> <span class="toc-nav-text">动机</span></a></li><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#%E7%9B%AE%E6%A0%87%E5%87%BD%E6%95%B0-1"><span class="toc-nav-number">2.8.1.2.</span> <span class="toc-nav-text">目标函数</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#LE%E7%9A%84%E7%BC%BA%E7%82%B9"><span class="toc-nav-number">2.8.2.</span> <span class="toc-nav-text">LE的缺点</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E5%AE%9E%E9%AA%8C%E6%95%88%E6%9E%9C"><span class="toc-nav-number">2.9.</span> <span class="toc-nav-text">实验效果</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#%E6%80%BB%E7%BB%93"><span class="toc-nav-number">3.</span> <span class="toc-nav-text">总结</span></a></li></ol>
+        
+        </div>
+      </aside>
+    
+
+
+
+      <!-- Sidebar Container -->
+      <div class="
+                col-lg-8 col-lg-offset-1
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+        <!-- Featured Tags -->
+        
+        <section>
+          <!-- no hr -->
+          <h5>
+            <a href="/tags/">FEATURED TAGS</a>
+          </h5>
+          <div class="tags">
+            
+            <a class="tag" href="/tags/#Python" title="Python">Python</a>
+            
+          </div>
+        </section>
+        
+
+        <!-- Friends Blog -->
+        
+        <hr>
+        <h5>FRIENDS</h5>
+        <ul class="list-inline">
+
+          
+          <li>
+            <a href="https://soptq.me/" target="_blank">Soptq</a>
+          </li>
+          
+          <li>
+            <a href="http://beantech.org" target="_blank">Bean Tech</a>
+          </li>
+          
+        </ul>
+        
+      </div>
+    </div>
+  </div>
+</article>
+
+
+
+<!-- anchorjs start -->
+<!-- async load function -->
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script type="text/javascript">
+  // async load function
+  function async (u, c) {
+    var d = document,
+      t = 'script',
+      o = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+    o.src = u;
+    if (c) {
+      o.addEventListener('load', function(e) {
+        c(null, e);
+      }, false);
+    }
+    s.parentNode.insertBefore(o, s);
+  };
+</script>
+<script type="text/javascript">
+  //anchor-js, Doc:http://bryanbraun.github.io/anchorjs/
+  async ("https://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js", function() {
+    anchors.options = {
+      visible: 'hover',
+      placement: 'left',
+      // icon: 'ℬ'
+      icon: '❡'
+    };
+    anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+  });
+</script>
+<style>
+  /* place left on bigger screen */
+  @media all and (min-width: 800px) {
+    .anchorjs-link {
+      position: absolute;
+      left: -0.75em;
+      font-size: 1.1em;
+      margin-top: -0.1em;
+    }
+  }
+</style>
+
+<!-- anchorjs end -->
+
+
+
+		<!-- Footer (contains ThemeColor、viewer) -->
+		<!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center">
+          
+
+          
+            <li>
+              <a target="_blank" href="https://github.com/lhb7">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          
+
+          
+
+          
+
+          
+
+          
+
+          
+            <li>
+              <a target="_blank" href="https://www.zhihu.com/people/BinBin">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa  fa-stack-1x fa-inverse">知</i>
+                </span>
+              </a>
+            </li>
+          
+
+          
+
+        </ul>
+        <p class="copyright text-muted">
+          Copyright &copy;
+          Mr.Li
+          2022
+          <br>
+          Theme by
+          <a target="_blank" rel="noopener" href="http://beantech.org">BeanTech</a>
+          <span style="display: inline-block; margin: 0 5px;">
+            <i class="fa fa-heart"></i>
+          </span>
+          re-Ported by
+          <a target="_blank" rel="noopener" href="https://v-vincen.life/">Live My Life</a>
+          |
+          <iframe style="margin-left: 2px; margin-bottom:-5px;" frameborder="0" scrolling="0" width="91px" height="20px" src="https://ghbtns.com/github-btn.html?user=V-Vincen&repo=V-Vincen.github.io&type=star&count=true"></iframe>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<a id="rocket" href="#top" class=""></a>
+
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="/js/jquery.min.js"></script>
+  <!-- Bootstrap Core JavaScript -->
+  <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+  <!-- Custom Theme JavaScript -->
+  <script type="text/javascript" src="/js/hux-blog.min.js"></script>
+  <!-- catalog -->
+  <script async="true" type="text/javascript" src="/js/catalog.js"></script>
+  <!-- totop(rocket) -->
+  <script async="true" type="text/javascript" src="/js/totop.js"></script>
+
+  
+
+  
+    <!-- Scroll start -->
+    <script async="async" type="text/javascript" src="/js/scroll.js"></script>
+    <!-- Scroll end -->
+  
+
+  
+
+  
+    <!-- Mouseclick -->
+    <script type="text/javascript" src="/js/mouseclick.js" content='The first step is as good as half over...,Laugh and grow fat...,Man proposes God disposes...,When all else is lost the future still remains...,Wasting time is robbing oneself...,Sharp tools make good work...,Cease to struggle and you cease to live...,A friend in need is a friend indeed...,Faith can move mountains...' color='#9933CC,#339933,#66CCCC,#FF99CC,#CCCCFF,#6666CC,#663399,#66CC99,#FF0033'></script>
+  
+
+  
+    <!-- ribbon -->
+    <script type="text/javascript" src="/js/ribbonDynamic.js"></script>
+  
+
+  
+
+
+
+
+
+
+  <!-- viewer start -->
+  <!-- viewer start (Picture preview) -->
+  
+    <script async="async" type="text/javascript" src="/js/viewer/viewer.min.js"></script>
+    <script async="async" type="text/javascript" src="/js/viewer/pic-viewer.js"></script>
+  
+
+  <!-- viewer end -->
+
+
+<script>
+  // async load function
+  function async (u, c) {
+    var d = document,
+      t = 'script',
+      o = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+    o.src = u;
+    if (c) {
+      o.addEventListener('load', function (e) {
+        c(null, e);
+      }, false);
+    }
+    s.parentNode.insertBefore(o, s);
+  }
+
+  // fastClick.js
+  async ("https://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function () {
+    var $nav = document.querySelector("nav");
+    if ($nav)
+      FastClick.attach($nav);
+    }
+  )
+</script>
+
+<!-- Because of the native support for backtick-style fenced code blocks right within the Markdown is landed in Github Pages, From V1.6, There is no need for Highlight.js, so Huxblog drops it officially. -
+https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0 - https://help.github.com/articles/creating-and-highlighting-code-blocks/ -->
+<!-- <script> async ("http://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function () { hljs.initHighlightingOnLoad(); }) </script> <link href="http://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet"> -->
+
+<!-- jquery.tagcloud.js -->
+<!-- <script> // only load tagcloud.js in tag.html if ($('#tag_cloud').length !== 0) { async ("http://yoursite-url/js/jquery.tagcloud.js", function () { $.fn.tagcloud.defaults = { // size: { start: 1, end: 1, unit: 'em' }, color: {
+start: '#bbbbee', end: '#0085a1' } }; $('#tag_cloud a').tagcloud(); }) } </script> -->
+
+
+		<!-- Search -->
+		
+		<div class="popup search-popup local-search-popup">
+  <span class="popup-btn-close">
+    ESC
+  </span>
+  <div class="container">
+    <div class="row">
+      <!-- <div class="col-md-9 col-md-offset-1"> -->
+      <div class="col-lg-9 col-lg-offset-1 col-md-10 col-md-offset-1 local-search-content">
+
+        <div class="local-search-header clearfix">
+
+          <div class="local-search-input-wrapper">
+            <span class="search-icon">
+              <i class="fa fa-search fa-lg" style="margin: 25px 10px 25px 20px;"></i>
+            </span>
+            <input autocomplete="off" placeholder="SEARCH..." type="text" id="local-search-input">
+          </div>
+        </div>
+        <div id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  
+    <script src="/js/ziploader.js"></script>
+  
+  <script>
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.json";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    // monitor main search box;
+    var onPopupClose = function (e) {
+      $('.popup').fadeOut(300);
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $('.popup').fadeIn(300);
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+    // get search zip version
+    $.get('/searchVersion.json?t=' + (+new Date()), function (res) {
+      if (localStorage.getItem('searchVersion') !== res) {
+        localStorage.setItem('searchVersion', res);
+        initSearchJson();
+      }
+    });
+
+    function initSearchJson() {
+      initLoad(['/search.flv'], {
+        loadOptions: {
+          success: function (obj) {
+            localStorage.setItem('searchJson', obj['search.json'])
+          },
+          error: function (e) {
+            return console.log(e)
+          }
+        },
+        returnOptions: {
+          'json': TYPE_TEXT
+        },
+        mimeOptions: {
+          'json': 'application/json'
+        }
+      })
+    }
+    // search function;
+    var searchFunc = function (search_id, content_id) {
+      'use strict';
+      isfetched = true;
+      var datas = JSON.parse(localStorage.getItem('searchJson'));
+      // console.log(search_id)
+      var input = document.getElementById(search_id);
+      var resultContent = document.getElementById(content_id);
+      var inputEventFunction = function () {
+        var searchText = input.value.trim().toLowerCase();
+        var keywords = searchText.split(/[\s\-]+/);
+        if (keywords.length > 1) {
+          keywords.push(searchText);
+        }
+        var resultItems = [];
+        if (searchText.length > 0) {
+          // perform local searching
+          datas.forEach(function (data) {
+            var isMatch = false;
+            var hitCount = 0;
+            var searchTextCount = 0;
+            var title = data.title
+              ? data.title.trim()
+              : '';
+            var titleInLowerCase = title.toLowerCase();
+            var content = data.content
+              ? data.content.trim().replace(/<[^>]+>/g, "")
+              : '';
+            var contentInLowerCase = content.toLowerCase();
+            var articleUrl = decodeURIComponent(data.url);
+
+            var date = data.date;
+            var dateTime = date.replace(/T/, " ").replace(/.000Z/, "");
+            var imgUrl = data.header_img;
+            
+
+
+            var indexOfTitle = [];
+            var indexOfContent = [];
+            // only match articles with not empty titles
+            keywords.forEach(function (keyword) {
+              function getIndexByWord(word, text, caseSensitive) {
+                var wordLen = word.length;
+                if (wordLen === 0) {
+                  return [];
+                }
+                var startPosition = 0,
+                  position = [],
+                  index = [];
+                if (!caseSensitive) {
+                  text = text.toLowerCase();
+                  word = word.toLowerCase();
+                }
+                while ((position = text.indexOf(word, startPosition)) > -1) {
+                  index.push({position: position, word: word});
+                  startPosition = position + wordLen;
+                }
+                return index;
+              }
+              indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+              indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+            });
+            if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+              isMatch = true;
+              hitCount = indexOfTitle.length + indexOfContent.length;
+            }
+            // show search results
+            if (isMatch) {
+              // sort index by position of keyword
+              [indexOfTitle, indexOfContent].forEach(function (index) {
+                index.sort(function (itemLeft, itemRight) {
+                  if (itemRight.position !== itemLeft.position) {
+                    return itemRight.position - itemLeft.position;
+                  } else {
+                    return itemLeft.word.length - itemRight.word.length;
+                  }
+                });
+              });
+              // merge hits into slices
+              function mergeIntoSlice(text, start, end, index) {
+                var item = index[index.length - 1];
+                var position = item.position;
+                var word = item.word;
+                var hits = [];
+                var searchTextCountInSlice = 0;
+                while (position + word.length <= end && index.length != 0) {
+                  if (word === searchText) {
+                    searchTextCountInSlice++;
+                  }
+                  hits.push({position: position, length: word.length});
+                  var wordEnd = position + word.length;
+                  // move to next position of hit
+                  index.pop();
+                  while (index.length != 0) {
+                    item = index[index.length - 1];
+                    position = item.position;
+                    word = item.word;
+                    if (wordEnd > position) {
+                      index.pop();
+                    } else {
+                      break;
+                    }
+                  }
+                }
+                searchTextCount += searchTextCountInSlice;
+                return {hits: hits, start: start, end: end, searchTextCount: searchTextCountInSlice};
+              }
+              var slicesOfTitle = [];
+              if (indexOfTitle.length != 0) {
+                slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+              }
+              var slicesOfContent = [];
+              while (indexOfContent.length != 0) {
+                var item = indexOfContent[indexOfContent.length - 1];
+                var position = item.position;
+                var word = item.word;
+                // cut out 100 characters
+                var start = position - 20;
+                var end = position + 80;
+                if (start < 0) {
+                  start = 0;
+                }
+                if (end < position + word.length) {
+                  end = position + word.length;
+                }
+                if (end > content.length) {
+                  end = content.length;
+                }
+                slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+              }
+              // sort slices in content by search text's count and hits' count
+              slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                  return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                  return sliceRight.hits.length - sliceLeft.hits.length;
+                } else {
+                  return sliceLeft.start - sliceRight.start;
+                }
+              });
+              // select top N slices in content
+              var upperBound = parseInt('1');
+              if (upperBound >= 0) {
+                slicesOfContent = slicesOfContent.slice(0, upperBound);
+              }
+              // highlight title and content
+              function highlightKeyword(text, slice) {
+                var result = '';
+                var prevEnd = slice.start;
+                slice.hits.forEach(function (hit) {
+                  result += text.substring(prevEnd, hit.position);
+                  var end = hit.position + hit.length;
+                  result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                  prevEnd = end;
+                });
+                result += text.substring(prevEnd, slice.end);
+                return result;
+              }
+              var resultItem = '';
+
+              // if (slicesOfTitle.length != 0) {   resultItem += "<li><a target='_blank' href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>"; } else {   resultItem += "<li><a target='_blank' href='" +
+              // articleUrl + "' class='search-result-title'>" + title + "</a>"; } slicesOfContent.forEach(function (slice) {   resultItem += "<a target='_blank' href='" + articleUrl + "'><p class=\"search-result\">" + highlightKeyword(content, slice) +
+              // "...</p></a>"; }); resultItem += "</li>";
+
+              if (slicesOfTitle.length != 0) {
+                resultItem += "<a target='_blank' href='" + articleUrl + "' class='search-result'><div class='search-result-left'><div class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</div><time class='search-result-date'>" + dateTime + "</time>";
+              } else {
+                resultItem += "<a target='_blank' href='" + articleUrl + "' class='search-result'><div class='search-result-left'><div class='search-result-title'>" + title + "</div><time class='search-result-date'>" + dateTime + "</time>";
+              }
+              slicesOfContent.forEach(function (slice) {
+                resultItem += "<p class=\"search-result-content\">" + highlightKeyword(content, slice) + "...</p>";
+              });
+              resultItem += "</div><div class='search-result-right'><img class='media-image' src='" + imgUrl + "' width='64px' height='48px'></img></div></a>";
+
+              resultItems.push({item: resultItem, searchTextCount: searchTextCount, hitCount: hitCount, id: resultItems.length});
+            }
+          })
+        };
+
+        if (keywords.length === 1 && keywords[0] === "") {
+          resultContent.innerHTML = '<div id="no-result"></div>'
+        } else if (resultItems.length === 0) {
+          resultContent.innerHTML = '<div id="no-result"></div>'
+        } else {
+          resultItems.sort(function (resultLeft, resultRight) {
+            if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+              return resultRight.searchTextCount - resultLeft.searchTextCount;
+            } else if (resultLeft.hitCount !== resultRight.hitCount) {
+              return resultRight.hitCount - resultLeft.hitCount;
+            } else {
+              return resultRight.id - resultLeft.id;
+            }
+          });
+          var searchResultList = '<div class=\"search-result-list\">';
+          resultItems.forEach(function (result) {
+            searchResultList += result.item;
+          })
+          searchResultList += "</div>";
+          resultContent.innerHTML = searchResultList;
+        }
+      }
+      if ('auto' === 'auto') {
+        input.addEventListener('input', inputEventFunction);
+      } else {
+        $('.search-icon').click(inputEventFunction);
+        input.addEventListener('keypress', function (event) {
+          if (event.keyCode === 13) {
+            inputEventFunction();
+          }
+        });
+      }
+      // remove loading animation
+      $('body').css('overflow', '');
+      proceedsearch();
+    }
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function (e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc('local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function (e) {
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 && $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+
+    document.addEventListener('mouseup', (e) => {
+      var _con = document.querySelector(".local-search-content");
+      if (_con) {
+        if (!_con.contains(e.target)) {
+          onPopupClose();
+        }
+      }
+    });
+  </script>
+
+
+		
+	</body>
+</html>
