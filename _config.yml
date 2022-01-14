@@ -113,7 +113,7 @@ gitalk:
   createIssueManually: true      # By default, Gitalk will create a corresponding github issue for your every single page automatically when the logined user is belong to the admin users. You can create it manually by setting this option to true
   language: zh-CN                    # Localization language key, en, zh-CN and zh-TW are currently available.
   maxCommentHeight: 250           # An optional number to limit comments' max height, over which comments will be folded.Default 250.
-
+  proxy: https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token      
 ## Gitment Settings
 ## Doc:https://github.com/imsun/gitment
 ##
