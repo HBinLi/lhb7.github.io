@@ -1,0 +1,1289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag (contains Google-Analytics、Baidu-Tongji)-->
+<head>
+  <!-- Google Analytics -->
+  
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-xxxxxx-xx"></script>
+    <script type="text/javascript">
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'UA-xxxxxx-xx');
+    </script>
+  
+
+  <!-- Baidu Tongji -->
+  
+    <script type="text/javascript">
+      // Originial
+      var _hmt = _hmt || [];
+      (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+      })();
+    </script>
+  
+
+  <!-- Baidu Push -->
+  
+    <script>
+      (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+          bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+          bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+      })();
+    </script>
+  
+
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+  <meta name="google-site-verification" content="lxDfCplOZbIzjhG34NuQBgu2gdyRlAtMB4utP5AgEBc"/>
+  <meta name="baidu-site-verification" content="PpzM9WxOJU"/>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="description" content="It&#39;s an IT blog..."/>
+  <meta name="keyword" content="Bin&#39;s Blog"/>
+  <link rel="shortcut icon" href="/img/avatar/Bin.jpg"/>
+
+  <!-- Place this tag in your head or just before your close body tag. -->
+  <script async="async" defer="defer" src="https://buttons.github.io/buttons.js"></script>
+
+  
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css"/>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/beantech.min.css"/>
+
+    <!-- Pygments Highlight CSS -->
+    <link rel="stylesheet" href="/css/highlight.css"/>
+    <link rel="stylesheet" href="/css/widget.css"/>
+    <link rel="stylesheet" href="/css/rocket.css"/>
+    <link rel="stylesheet" href="/css/signature.css"/>
+    <link rel="stylesheet" href="/css/catalog.css"/>
+    <link rel="stylesheet" href="/css/livemylife.css"/>
+
+    
+      <!-- wave start -->
+      <link rel="stylesheet" href="/css/wave.css"/>
+      <!-- wave end -->
+    
+
+    
+      <!-- top start (article top hot config) -->
+      <link rel="stylesheet" href="/css/top.css"/>
+      <!-- top end -->
+    
+
+    
+      <!-- ThemeColor start -->
+      <link rel="stylesheet" href="/css/scroll.css"/>
+      <!-- ThemeColor end -->
+    
+
+    
+      <!-- viewer start (Picture preview) -->
+      <link rel="stylesheet" href="/css/viewer.min.css"/>
+      <!-- viewer end -->
+    
+
+    
+      <!-- Search start -->
+      <link rel="stylesheet" href="/css/search.css"/>
+      <!-- Search end -->
+    
+
+    
+      <!-- ThemeColor start -->
+      <link rel="stylesheet" href="/css/themecolor.css"/>
+      <!-- ThemeColor end -->
+    
+
+    
+
+    
+      <!-- gitalk start -->
+      <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css"> -->
+      <link rel="stylesheet" href="/css/gitalk.css"/>
+      <!-- gitalk end -->
+    
+  
+
+  <!-- Custom Fonts -->
+  <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+  <!-- Hux change font-awesome CDN to qiniu -->
+  <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.5.0/css/font-awesome.min.css" type="text/css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Hux Delete, sad but pending in China <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'> <link
+  href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/ css'> -->
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script> <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script> <![endif]-->
+
+  <!-- ga & ba script hoook -->
+  <link rel="canonical" href="http://yoursite-url/2022/01/17/子空间学习(7)-Spectral Clustering and Normalized Cuts/">
+  <title>
+    
+      子空间学习(7)-Spectral Clustering and Normalized Cuts - Bin&#39;s Blog
+    
+  </title>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<!-- hack iOS CSS :active style -->
+
+	<body ontouchstart="" class="body--light body--light">
+
+
+		<!-- ThemeColor -->
+		
+		<!-- ThemeColor -->
+<style type="text/css">
+  .body--light {
+    --light-mode: none;
+    --dark-mode: block;
+  }
+  .body--dark {
+    --light-mode: block;
+    --dark-mode: none;
+  }
+  i.mdui-icon.material-icons.light-mode {
+    display: var(--light-mode);
+  }
+  i.mdui-icon.material-icons.dark-mode {
+    display: var(--dark-mode);
+  }
+</style>
+<div class="toggle" onclick="document.body.classList.toggle('body--dark')">
+  <i class="mdui-icon material-icons light-mode"></i>
+  <i class="mdui-icon material-icons dark-mode"></i>
+</div>
+<script>
+  //getCookieValue
+  function getCookieValue(a) {
+    var b = document.cookie.match('(^|[^;]+)\\s*' + a + '\\s*=\\s*([^;]+)');
+    return b
+      ? b.pop()
+      : '';
+  }
+  let themeMode = 'light';
+  if (getCookieValue('sb-color-mode') && (getCookieValue('sb-color-mode') !== themeMode)) {
+    let dbody = document.body.classList;
+    themeMode === 'dark' ? dbody.remove('body--dark') : dbody.add('body--dark');
+  }
+
+  //setCookieValue
+  var toggleBtn = document.querySelector(".toggle");
+  toggleBtn.addEventListener("click", function () {
+    var e = document.body.classList.contains("body--dark");
+    var cookieString = e
+      ? "dark"
+      : "light";
+    var exp = new Date();
+    exp.setTime(exp.getTime() + 3 * 24 * 60 * 60 * 1000); //3天过期
+    document.cookie = "sb-color-mode=" + cookieString + ";expires=" + exp.toGMTString() + ";path=/";
+  });
+</script>
+
+		
+
+		<!-- Gitter -->
+		
+		<!-- Gitter -->
+<!-- Docs:https://gitter.im/?utm_source=left-menu-logo -->
+<script>
+  ((window.gitter = {}).chat = {}).options = {
+    room: 'your-community/your-room'
+  };
+</script>
+<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+
+		
+
+		<!-- Navigation (contains search)-->
+		<!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header page-scroll">
+      <button type="button" class="navbar-toggle">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">An Ordinary Life</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <!-- Known Issue, found by Hux: <nav>'s height woule be hold on by its content. so, when navbar scale out, the <nav> will cover tags. also mask any touch event of tags, unfortunately. -->
+    <div id="huxblog_navbar">
+      <div class="navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="/">HOME</a>
+          </li>
+
+          
+          
+          <li>
+            <a href="/about/">
+              
+              ABOUT
+              
+              
+            </a>
+          </li>
+          
+          
+          
+          <li>
+            <a href="/archive/">
+              
+              ARCHIVES
+              
+              
+            </a>
+          </li>
+          
+          
+          
+          <li>
+            <a href="/tags/">
+              
+              TAGS
+              
+              
+            </a>
+          </li>
+          
+          
+          
+          
+          
+          <li>
+            <a href="/categories/">
+              
+              CATEGORIES
+              
+              
+            </a>
+          </li>
+          
+          
+
+          
+          <li>
+            <a class="popup-trigger">
+              <span class="search-icon"></span>SEARCH</a>
+          </li>
+          
+
+          <!-- LangSelect -->
+          
+        </ul>
+      </div>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container -->
+</nav>
+<!-- progress -->
+<div id="progress">
+  <div class="line" style="width: 0%;"></div>
+</div>
+
+<script>
+  // Drop Bootstarp low-performance Navbar Use customize navbar with high-quality material design animation in high-perf jank-free CSS3 implementation
+  var $body = document.body;
+  var $toggle = document.querySelector('.navbar-toggle');
+  var $navbar = document.querySelector('#huxblog_navbar');
+  var $collapse = document.querySelector('.navbar-collapse');
+
+  $toggle.addEventListener('click', handleMagic)
+
+  function handleMagic(e) {
+    if ($navbar.className.indexOf('in') > 0) {
+      // CLOSE
+      $navbar.className = " ";
+      // wait until animation end.
+      setTimeout(function() {
+        // prevent frequently toggle
+        if ($navbar.className.indexOf('in') < 0) {
+          $collapse.style.height = "0px"
+        }
+      }, 400)
+    } else {
+      // OPEN
+      $collapse.style.height = "auto"
+      $navbar.className += " in";
+    }
+  }
+</script>
+
+
+		<!-- Post Header (contains intro-header、signature、wordcount、busuanzi、waveoverlay) -->
+		<!-- Modified by Yu-Hsuan Yen -->
+<!-- Post Header -->
+
+  <style type="text/css">
+    .body--light {
+      /* intro-header */
+      --intro-header-background-image-url-home: url('/img/header_img/newhome_bg.jpg');
+      --intro-header-background-image-url-post: url('/img/header_img/lml_bg.jpg');
+      --intro-header-background-image-url-page: url('//img/header_img/lml_bg.jpg');
+    }
+    .body--dark {
+      --intro-header-background-image-url-home: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('/img/header_img/newhome_bg.jpg');
+      --intro-header-background-image-url-post: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('/img/header_img/lml_bg.jpg');
+      --intro-header-background-image-url-page: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('//img/header_img/lml_bg.jpg');
+    }
+
+    header.intro-header {
+       /*post*/
+        background-image: var(--intro-header-background-image-url-post);
+        /* background-image: url('/img/header_img/lml_bg.jpg'); */
+      
+    }
+
+    
+  </style>
+
+
+
+
+
+<header class="intro-header">
+  <!-- Signature -->
+  <div id="signature">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+          
+          <div class="post-heading">
+            <div class="tags">
+              
+              <a class="tag" href="/tags/#Python" title="Python">Python</a>
+              
+            </div>
+            <h1>子空间学习(7)-Spectral Clustering and Normalized Cuts</h1>
+            <h2 class="subheading">Subspace Learning-Spectral Clustering and Normalized Cuts</h2>
+            <span class="meta">
+              Posted by Mr.Li on
+              2022-01-17
+            </span>
+
+
+            
+            <!-- WordCount start -->
+            <div class="blank_box"></div>
+            <span class="meta">
+              Estimated Reading Time <span class="post-count">11</span> Minutes
+            </span>
+            <div class="blank_box"></div>
+            <span class="meta">
+              Words <span class="post-count">2.8k</span> In Total
+            </span>
+            <div class="blank_box"></div>
+            <!-- WordCount end -->
+            
+            
+
+
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <!-- waveoverlay start -->
+  <div class="preview-overlay">
+    <svg class="preview-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+      <defs>
+        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+      </defs>
+      <g class="preview-parallax">
+        <use xlink:href="#gentle-wave" x="48" y="0" fill=var(--gentle-wave1)></use>
+        <use xlink:href="#gentle-wave" x="48" y="3" fill=var(--gentle-wave2)></use>
+        <use xlink:href="#gentle-wave" x="48" y="5" fill=var(--gentle-wave3)></use>
+        <use xlink:href="#gentle-wave" x="48" y="7" fill=var(--gentle-wave)></use>
+      </g>
+    </svg>
+  </div>
+  <!-- waveoverlay end -->
+  
+
+</header>
+
+
+
+		<!-- Main Content (Post contains
+	Pager、
+	tip、
+	socialshare、
+	gitalk、gitment、disqus-comment、
+	Catalog、
+	Sidebar、
+	Featured-Tags、
+	Friends Blog、
+	anchorjs、
+	) -->
+		<!-- Modify by Yu-Hsuan Yen -->
+<!-- Post Content -->
+<article>
+  <div class="container">
+    <div class="row">
+      <!-- Post Container -->
+      <div class="col-lg-8 col-lg-offset-1 col-md-10 col-md-offset-1 post-container">
+
+        <blockquote>
+<p>子空间学习系列主要讨论从PCA发表开始到2010年中，子空间学习相关论文。本文立足于论文：<strong>Normalized Cuts and Image Segmentation（2000 TPAMI）</strong>和<strong>On Spectral clustering analysis and an algorithm（2001 NIPS）</strong>。基于此进行概念的梳理和思考，尝试从数学的角度去阐述N-cut和谱聚类。</p>
+</blockquote>
+<h1 id="摘要："><a href="#摘要：" class="headerlink" title="摘要："></a>摘要：</h1><p>信息处理中的许多问题都涉及使用从数据派生的矩阵的特征向量进行某种形式的聚类点。 其中，N-cut和谱聚类在归一化切割准则的框架内。 N-cut 将聚类问题视为图划分问题，并提出了一种新颖的全局标准，即归一化割，用于对图进行分割。 归一化切割标准测量不同组之间的总差异以及组内的总相似度。 此外，谱聚类通过使用矩阵扰动理论中的工具将 K-means 与 N-cut 相结合，并在许多具有挑战性的聚类问题上取得了良好的实验结果。 在本报告中，我们尝试以数学方式解释 N-cut 和谱聚类的主要思想。 此外，还包括对 DUT-OMRON 数据集的实验，以探索 N-cut 和光谱聚类的有效性。本文的解释会比较简略只提重点部分。需要注意的是本文有下划线的部分是一些需要了解的基础概念，由于篇幅，我就不在后面解释，望读者自行查阅。</p>
+<h1 id="前景知识"><a href="#前景知识" class="headerlink" title="前景知识"></a>前景知识</h1><h2 id="聚类"><a href="#聚类" class="headerlink" title="聚类"></a>聚类</h2><p>聚类是将总体或数据点 $X=[x_{1},x_{2},\cdots,x_{n}]$ 分成若干组 $U=\{U_{1},…,U_{k}\}$ ，使得同一组中的数据点更相似，而不同组之间的数据点不那么相似。 简而言之，目的是分离具有相似特征的组并将它们分配到集群中，请参见以下表示：</p>
+<script type="math/tex; mode=display">
+{\forall} x_{ji}\in U_{j},\ x_{ji_{1}}\ and\ x_{ji_{2}}\ are\ more\ similar.</script><h2 id="K-means"><a href="#K-means" class="headerlink" title="K-means"></a>K-means</h2><p>K-means 聚类是一种矢量量化方法，旨在将 $n$ 个观测值划分为 $k$ 个聚类，其中每个观测值都属于具有最近聚类中心的聚类。 K-means 聚类旨在将 n 个观测值划分为 $k (\leq n)$ 个集合 $S = \{S_{1},S_{2},\cdots,S_{k}\}$ ，目标使最小化簇内平方和，即：</p>
+<script type="math/tex; mode=display">
+\begin{equation}
+    \underset{S}{\arg \min}\sum^{k}_{i=1}\sum_{x\in S_{i}}\|x-\mu_{i}\|^{2}=\underset{S}{\arg \min}\sum_{i=1}^{k}|S_{i}|VarS_{i},
+\end{equation}</script><p>其中 $\mu_{i}$ 是 $S_{i}$ 中点的平均值。</p>
+<h2 id="割"><a href="#割" class="headerlink" title="割"></a>割</h2><p>一个图 $G=(V,E)$ 可以被分割成两个不相交的集合（A 和 B），$A \cup B = V$, $A \cap B = \emptyset$，主要通过简单地删除连接这两个集合的边部分。这两个部分之间的不同程度可以计算为已删除边缘的总权重。 在图论语言中，它被称为割：</p>
+<script type="math/tex; mode=display">
+\begin{equation}
+    cut(A,B)=\sum_{u\in A,v\in B}w(u,v).
+\end{equation}</script><h2 id="割与聚类"><a href="#割与聚类" class="headerlink" title="割与聚类"></a>割与聚类</h2><p>聚类的直觉是根据它们的相似性将不同组中的点分开。 对于以相似度图的形式给出的数据，这个问题可以重述如下：我们希望找到一个图的分区，使得不同组之间的边具有非常低的权重（这意味着不同集群中的点彼此之间是不相似的） ，并且组内的边具有较高的权重（这意味着同一簇内的点彼此相似）。</p>
+<h1 id="Normalized-Cuts"><a href="#Normalized-Cuts" class="headerlink" title="Normalized Cuts"></a>Normalized Cuts</h1><p>图的最优二分法是最小化割值（Min-cut）的二分法，这种划分的数量是指数级的。 此外，Min-cut 在划分小点集时具有不自然的偏差。</p>
+<p>为了避免这两个限制，提出了归一化切割（N-cut）作为两组之间分离的度量。 N-cut 不是查看连接两个分区的总边权重的值，而是将切割成本计算为图中所有节点的总边连接的一部分，见公式(1)：</p>
+<script type="math/tex; mode=display">
+\begin{equation}
+    Ncut(A,B)=\frac{cut(A,B)}{assoc(A,V)}+\frac{cut(A,B)}{assoc(B,V)},
+\end{equation}\tag{1}</script><p>其中 $assoc(A,V)=\sum_{u\in A,t\in V}w(u,t)$ 是从 A 中的节点到图中所有节点的总连接，$assoc(B,V )$ 的定义类似。</p>
+<h2 id="目标函数"><a href="#目标函数" class="headerlink" title="目标函数"></a>目标函数</h2><p>N-cut 问题的目标函数是最小化归一化割，见公式(2)：</p>
+<script type="math/tex; mode=display">
+\begin{equation}
+    \begin{gathered}
+    \underset{\textbf{y}}{\arg \min}\frac{\textbf{y}^{T}(D-W)\textbf{y}}{\textbf{y}^{T}D\textbf{y}}\\
+    \text{s.t. }\textbf{y}^{T}D\textbf{1}=0.
+    \end{gathered}
+\end{equation}\tag{2}</script><p>我们通过求解广义特征值系统最小化目标函数公式(2)，</p>
+<script type="math/tex; mode=display">
+\begin{equation}
+    (D-W)\textbf{y}=\lambda D\textbf{y}.
+\end{equation}\tag{3}</script><p>此外，上述公式(2)和公式(3)可以归一化，公式(2)可以被重写为公式(4)，</p>
+<script type="math/tex; mode=display">
+\begin{equation}
+    \begin{gathered}
+    \underset{z}{\arg \min}\frac{z^{T}D^{-\frac{1}{2}(D-W)D^{-\frac{1}{2}}}z}{z^{T}z}\\
+    \text{s.t. }z^{T}z_{0}=0,
+    \end{gathered}
+\end{equation}\tag{4}</script><p>其中 $z=D^{\frac{1}{2}}\textbf{y}$。 $z_{0}=D^{\frac{1}{2}}\textbf{1}$ 是公式(5)的特征向量，这个特征向量的特征值为 0，即公式(5)的最小特征向量。 此外，$D^{-\frac{1}{2}}(DW)D^{-\frac{1}{2}}$ 是对称正半定的，因为 $DW$，也称为拉普拉斯矩阵，是已知的，为半正定。 因此，我们可以通过求解广义特征值分解来最小化目标函数公式(4)，</p>
+<script type="math/tex; mode=display">
+\begin{equation}
+    D^{-\frac{1}{2}}(D-W)D^{-\frac{1}{2}}z=\lambda z.
+\end{equation}\tag{5}</script><p>需要额外注意的是我们最后使用的是第二小特征值对应的特征向量来对图进行分割，因为公式(5)中第二小的特征向量 $\textbf{y}$ 仅逼近最优归一化割解，它恰好最小化了以下问题：</p>
+<script type="math/tex; mode=display">
+\inf _{y^{T} \mathbf{D} 1=0} \frac{\sum_{i} \sum_{j}(y(i)-y(j))^{2} w_{ij} }{\sum_{i} y(i)^{2} \mathbf{d}(i)}</script><p>其中 $d(i)=D(i,i)$。 粗略地说，这迫使指示向量 $\textbf{y}$ 对紧密耦合的节点 $i$ 和 $j$采用相似的值。</p>
+<h2 id="时间复杂度"><a href="#时间复杂度" class="headerlink" title="时间复杂度"></a>时间复杂度</h2><p>为所有特征向量求解一个标准特征值问题需要整个算法的主要计算量。 它需要 $0(n^{3})$ 操作，其中 $n$ 是图中的节点数。 但是，$n$ 是图像中的像素数，因此复杂度 $0(n^{3})$ 是不切实际的。 因此，N-cut 通过称为 Lanczos 方法的特征求解器提高了计算效率，其中它的运行时间为 $O(mn)+O(mM(n))$，其中 $m$ 是所需的最大矩阵向量计算次数，$M(n)$ 是 $Ax$ 的矩阵向量计算的成本，其中 $A=D^{-\frac{1}{2}}(DW)D^{-\frac{ 1}{2}}$。 由于$W$ 是稀疏的，$A$ 和矩阵向量也是稀疏的计算量只是 $O(n)$。</p>
+<p>一行 $A$ 与向量 $x$ 的内积的成本是 $O(n)$。 将所有内容放在一起，每个矩阵向量计算都需要 $O(n)$ 次操作，且常数因子很小。</p>
+<h2 id="缺点"><a href="#缺点" class="headerlink" title="缺点"></a>缺点</h2><p>当数据不够统一且存在异常值时，N-cut 无法切出图中孤立节点的小集合。</p>
+<h1 id="谱聚类"><a href="#谱聚类" class="headerlink" title="谱聚类"></a>谱聚类</h1><h2 id="谱聚类的不同理解"><a href="#谱聚类的不同理解" class="headerlink" title="谱聚类的不同理解"></a>谱聚类的不同理解</h2><p>谱是指数据的相似度矩阵的特征值进行降维。在数学中，矩阵的谱是其特征值的集合。更一般地，如果 $T:V\rightarrow v$ 是任何有限维向量空间上的线性算子，则它的谱是标量 $\lambda$ 的集合，使得 $T-\lambda I$ 不可逆。</p>
+<p>在降维的观点上，谱聚类技术利用数据相似矩阵的谱（特征值）进行降维，然后再进行较少维度的聚类。</p>
+<p>在图分割的观点上，我们希望找到图的一个分区，使得不同组之间的边具有非常低的权重（这意味着不同集群中的点彼此不同）并且组内的边具有较高的权重（这意味着同一簇内的点彼此相似）。</p>
+<p>在随机游走的观点上，谱聚类可以解释为试图找到图的一个分区，使得随机游走在同一个集群中停留很长时间，并且很少在集群之间跳跃。</p>
+<h2 id="算法流程"><a href="#算法流程" class="headerlink" title="算法流程"></a>算法流程</h2><p>$X={x_{1},\cdots,x_{n}}$ 在 $\mathcal{R}^{l}$ 中，我们想要聚类成 $k$ 个子集。 谱聚类的算法步骤为算法1。</p>
+<p><img src="/2022/01/17/%E5%AD%90%E7%A9%BA%E9%97%B4%E5%AD%A6%E4%B9%A0(7)-Spectral%20Clustering%20and%20Normalized%20Cuts/algorithm.png" alt="LLE-Val" style="zoom:90%;"></p>
+<center style="color:#C0C0C0;text-decoration:underline">图1. 谱聚类算法流程。</center>
+
+<h3 id="不同的构造图的方式"><a href="#不同的构造图的方式" class="headerlink" title="不同的构造图的方式"></a>不同的构造图的方式</h3><p>A Tutorial on Spectral Clustering（2007）总结了三种图：</p>
+<ul>
+<li>$\epsilon-neighborhood$ 图：所有成对距离小于 $\epsilon$ 的点都已连接。 $\epsilon-neighborhood$ 图被视为未加权图。</li>
+<li>$k$-最近邻图：顶点$v_{i}$和顶点$v_{j}$是连接的$v_{j}$在$v_{i}$的$k$个最近邻居中 . 然而，这个定义导致了有向图，因为邻域关系不是对称的。</li>
+<li>全连接图：所有点都简单地相互连接，具有正相似性，我们通过 $s_{ij}=s(x_{i},x_{j})$ 对所有边进行加权。</li>
+</ul>
+<h3 id="不同的图拉普拉斯构造"><a href="#不同的图拉普拉斯构造" class="headerlink" title="不同的图拉普拉斯构造"></a>不同的图拉普拉斯构造</h3><p>A Tutorial on Spectral Clustering（2007）总结了三种图拉普拉斯：</p>
+<ul>
+<li><p>非归一化图拉普拉斯矩阵定义为：</p>
+<script type="math/tex; mode=display">
+L=D-W</script></li>
+<li><p>有两个矩阵在文献中被称为归一化图拉普拉斯算子。 我们用 $L_{sym}$ 表示第一个矩阵，因为它是一个对称矩阵，第二个用 $L_{rw}$ 表示，因为它与随机游走密切相关。 两个矩阵彼此密切相关，定义为：</p>
+<script type="math/tex; mode=display">
+     L_{sym}:=D^{-\frac{1}{2}}LD^{-\frac{1}{2}}=ID^{-\frac{1}{2}}WD^{- \frac{1}{2}}</script><script type="math/tex; mode=display">
+L_{rw}:=D^{-1}L=I-D^{-1}W.</script></li>
+</ul>
+<h1 id="实验结果"><a href="#实验结果" class="headerlink" title="实验结果"></a>实验结果</h1><p>主要是本节相关算法的代码，贴一下NC的（采用稀疏矩阵计算，会快一点），SC的sklearn有库，然后由于可以自定义相似矩阵$W$也挺方便的：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> math</span><br><span class="line"><span class="keyword">from</span> scipy.sparse <span class="keyword">import</span> csr_matrix</span><br><span class="line"><span class="keyword">import</span> scipy.sparse <span class="keyword">as</span> sparse</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">sparse_max</span>(<span class="params">A, B</span>):</span></span><br><span class="line">    Ag = (A &gt; B).astype(<span class="built_in">int</span>)</span><br><span class="line">    <span class="keyword">return</span> Ag.multiply(A - B) + B</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">construct_graph</span>(<span class="params">img, radius, t1, t2</span>):</span></span><br><span class="line">    n = img.shape[<span class="number">0</span>] * img.shape[<span class="number">1</span>]</span><br><span class="line">    W = np.zeros((n, n))</span><br><span class="line">    data = []</span><br><span class="line">    row = []</span><br><span class="line">    col = []</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(img.shape[<span class="number">0</span>]):</span><br><span class="line">        <span class="keyword">for</span> j <span class="keyword">in</span> <span class="built_in">range</span>(img.shape[<span class="number">1</span>]):</span><br><span class="line">            ori = i * img.shape[<span class="number">0</span>] + j</span><br><span class="line">            <span class="keyword">for</span> x <span class="keyword">in</span> <span class="built_in">range</span>(i - radius, i + radius + <span class="number">1</span>):</span><br><span class="line">                <span class="keyword">for</span> y <span class="keyword">in</span> <span class="built_in">range</span>(j - radius, j + radius + <span class="number">1</span>):</span><br><span class="line">                    <span class="keyword">if</span> x &lt; <span class="number">0</span> <span class="keyword">or</span> x &gt;= img.shape[<span class="number">0</span>] <span class="keyword">or</span> y &lt; <span class="number">0</span> <span class="keyword">or</span> y &gt;= img.shape[<span class="number">1</span>] <span class="keyword">or</span> (x == i <span class="keyword">and</span> y == j):</span><br><span class="line">                        <span class="keyword">continue</span></span><br><span class="line">                    <span class="keyword">else</span>:</span><br><span class="line">                        <span class="comment"># if math.fabs(np.sum(np.abs(img[i][j]-img[x][y])))&gt;0.15:</span></span><br><span class="line">                        <span class="comment">#     continue</span></span><br><span class="line">                        value = math.exp(-((x - i) ** <span class="number">2</span> + (y - j) ** <span class="number">2</span>) / t1) * math.exp(</span><br><span class="line">                            -(np.linalg.norm(img[i][j] - img[x][y]) ** <span class="number">2</span>) / t2)</span><br><span class="line">                        data.append(value)</span><br><span class="line">                        row.append(ori)</span><br><span class="line">                        col.append(x * img.shape[<span class="number">0</span>] + y)</span><br><span class="line">    <span class="keyword">return</span> csr_matrix((data, (row, col)), shape=(n, n))</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">NC</span>(<span class="params">img, neighboor, t1, t2</span>):</span></span><br><span class="line">    W = construct_graph(img, neighboor, t1, t2)</span><br><span class="line">    W = sparse_max(W, W.T)</span><br><span class="line">    D = sparse.diags(np.asarray(W.<span class="built_in">sum</span>(axis=<span class="number">0</span>)).reshape(<span class="number">1</span>, -<span class="number">1</span>), [<span class="number">0</span>])</span><br><span class="line">    L = D - W</span><br><span class="line">    D_1 = sparse.diags(<span class="number">1</span> / np.sqrt(np.asarray(W.<span class="built_in">sum</span>(axis=<span class="number">0</span>))).reshape(<span class="number">1</span>, -<span class="number">1</span>), [<span class="number">0</span>])</span><br><span class="line">    T = D_1.dot(L).dot(D_1)</span><br><span class="line">    eigVals, eigVects = sparse.linalg.eigsh(T, k=<span class="number">2</span>, which=<span class="string">&#x27;SA&#x27;</span>)</span><br><span class="line">    eigValInd = np.argsort(eigVals)</span><br><span class="line">    eigValInd = eigValInd[<span class="number">1</span>]</span><br><span class="line">    w = eigVects[:, eigValInd]</span><br><span class="line">    w = D_1.dot(w)</span><br><span class="line">    w = np.asarray(w)</span><br><span class="line">    <span class="keyword">return</span> w.real</span><br></pre></td></tr></table></figure>
+<p>sklearn调用SC的库：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> sklearn.cluster <span class="keyword">import</span> SpectralClustering</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">SC</span>(<span class="params">img,cluster</span>):</span></span><br><span class="line">    clustering=SpectralClustering(n_clusters=cluster)</span><br><span class="line">    <span class="keyword">return</span> clustering.fit_predict(img)</span><br></pre></td></tr></table></figure>
+<p>展示一些实验结果，主要是使用的数据集是DUT-OMRON数据集，它由5168张自然图像组成。结果是NC的二分类结果和SC的四分类结果，用于图像分割。<br><img src="/2022/01/17/%E5%AD%90%E7%A9%BA%E9%97%B4%E5%AD%A6%E4%B9%A0(7)-Spectral%20Clustering%20and%20Normalized%20Cuts/NC.png" alt="LLE-Val" style="zoom:90%;"></p>
+<center style="color:#C0C0C0;text-decoration:underline">图2. N-cut实现二分类图像分割。</center>
+<img src="/2022/01/17/%E5%AD%90%E7%A9%BA%E9%97%B4%E5%AD%A6%E4%B9%A0(7)-Spectral%20Clustering%20and%20Normalized%20Cuts/SC.png" alt="LLE-Val" style="zoom:90%;">
+
+<center style="color:#C0C0C0;text-decoration:underline">图3. SC实现四分类分割。</center>
+
+
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>效果还不错，实现应该比较到位。</p>
+
+
+        <hr>
+        <!-- Pager -->
+        <ul class="pager">
+          
+          <li class="previous">
+            <a href="/2022/01/18/子空间学习(8)-Sparse Representation/" data-toggle="tooltip" data-placement="top" title="子空间学习(8)-Sparse Representation">&larr; Previous Post</a>
+          </li>
+          
+          
+          <li class="next">
+            <a href="/2022/01/16/子空间学习(6)-LDE/" data-toggle="tooltip" data-placement="top" title="子空间学习(6)-LDE">Next Post &rarr;</a>
+          </li>
+          
+        </ul>
+
+        
+        <!-- tip start -->
+        <!-- tip -->
+<!-- tip start -->
+<div class="tip">
+  <p>
+    
+      If you like this blog or find it useful for you, you are welcome to comment on it. You are also welcome to share this blog, so that more people can participate in it. If the images used in the blog infringe your copyright, please contact the author to delete them. Thank you !
+    
+  </p>
+</div>
+<!-- tip end -->
+
+        <!-- tip end -->
+        
+
+        
+        <!-- Sharing Srtart -->
+        <!-- Social Social Share Post -->
+<!-- Docs:https://github.com/overtrue/share.js -->
+
+<div class="social-share" data-initialized="true" data-disabled="tencent ,douban ,qzone ,linkedin ,facebook ,google ,diandian" data-wechat-qrcode-helper="" align="center">
+  <ul class="list-inline text-center social-share-ul">
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon icon-twitter">
+        <i class="fa fa-twitter fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a class="social-share-icon icon-wechat">
+        <i class="fa fa-weixin fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon icon-weibo">
+        <i class="fa fa-weibo fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon icon-qq">
+        <i class="fa fa-qq fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon" href="mailto:?subject=子空间学习(7)-Spectral Clustering and Normalized Cuts&body=Hi,I found this website and thought you might like it http://yoursite-url/2022/01/17/子空间学习(7)-Spectral Clustering and Normalized Cuts/">
+        <i class="fa fa-envelope fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+<!-- css & js -->
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css"> -->
+<script defer="defer" async="true" src="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
+
+        <!-- Sharing End -->
+        
+        <hr>
+
+        <!-- comments start -->
+        <!-- 1. gitalk comment -->
+
+  <!-- gitalk start -->
+  <!-- Docs:https://github.com/gitalk/gitalk/blob/master/readme-cn.md -->
+
+  <div id="gitalk-container"></div>
+
+  
+    <!-- <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.js"></script> -->
+    <script src="/js/comment/gitalk.js"></script>
+  
+
+  <script>
+    var gitalk = new Gitalk({
+      clientID: '65682c9d7fede4bb7fc5',
+      clientSecret: '6b9080be7fdcaae6ae9bbd667c4d2af5f16eb118',
+      repo: 'lhb7.github.io',
+      owner: 'lhb7',
+      admin: 'lhb7',
+      id: 'Mon Jan 17 2022 12:24:17 GMT+0800', // Ensure uniqueness and length less than 50
+      distractionFreeMode: false, // Facebook-like distraction free mode
+      perPage: 10,
+      pagerDirection: 'last',
+      createIssueManually: true,
+      language: 'zh-CN',
+      proxy: ''
+    });
+    gitalk.render('gitalk-container');
+
+    var gtFolded = () => {
+      setTimeout(function () {
+        let markdownBody = document.getElementsByClassName("markdown-body");
+        let list = Array.from(markdownBody);
+        list.forEach(item => {
+          if (item.clientHeight > 250) {
+            item.classList.add('gt-comment-body-folded');
+            item.style.maxHeight = '250px';
+            item.title = 'Click to Expand';
+            item.onclick = function () {
+              item.classList.remove('gt-comment-body-folded');
+              item.style.maxHeight = '';
+              item.title = '';
+              item.onclick = null;
+            };
+          }
+        })
+      }, 800);
+    }
+  </script>
+
+  <!-- gitalk end -->
+
+
+<!-- 2. gitment comment -->
+
+
+<!-- 3. disqus comment -->
+
+
+        <!-- comments end -->
+        <hr>
+
+      </div>
+
+      <!-- Catalog: Tabe of Content -->
+      <!-- Table of Contents -->
+
+    
+      <aside id="sidebar">
+        <div id="toc" class="toc-article">
+        <strong class="toc-title">Contents</strong>
+        
+          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#%E6%91%98%E8%A6%81%EF%BC%9A"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">摘要：</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#%E5%89%8D%E6%99%AF%E7%9F%A5%E8%AF%86"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">前景知识</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E8%81%9A%E7%B1%BB"><span class="toc-nav-number">2.1.</span> <span class="toc-nav-text">聚类</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#K-means"><span class="toc-nav-number">2.2.</span> <span class="toc-nav-text">K-means</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E5%89%B2"><span class="toc-nav-number">2.3.</span> <span class="toc-nav-text">割</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E5%89%B2%E4%B8%8E%E8%81%9A%E7%B1%BB"><span class="toc-nav-number">2.4.</span> <span class="toc-nav-text">割与聚类</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#Normalized-Cuts"><span class="toc-nav-number">3.</span> <span class="toc-nav-text">Normalized Cuts</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E7%9B%AE%E6%A0%87%E5%87%BD%E6%95%B0"><span class="toc-nav-number">3.1.</span> <span class="toc-nav-text">目标函数</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E6%97%B6%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6"><span class="toc-nav-number">3.2.</span> <span class="toc-nav-text">时间复杂度</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E7%BC%BA%E7%82%B9"><span class="toc-nav-number">3.3.</span> <span class="toc-nav-text">缺点</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#%E8%B0%B1%E8%81%9A%E7%B1%BB"><span class="toc-nav-number">4.</span> <span class="toc-nav-text">谱聚类</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E8%B0%B1%E8%81%9A%E7%B1%BB%E7%9A%84%E4%B8%8D%E5%90%8C%E7%90%86%E8%A7%A3"><span class="toc-nav-number">4.1.</span> <span class="toc-nav-text">谱聚类的不同理解</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E7%AE%97%E6%B3%95%E6%B5%81%E7%A8%8B"><span class="toc-nav-number">4.2.</span> <span class="toc-nav-text">算法流程</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#%E4%B8%8D%E5%90%8C%E7%9A%84%E6%9E%84%E9%80%A0%E5%9B%BE%E7%9A%84%E6%96%B9%E5%BC%8F"><span class="toc-nav-number">4.2.1.</span> <span class="toc-nav-text">不同的构造图的方式</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#%E4%B8%8D%E5%90%8C%E7%9A%84%E5%9B%BE%E6%8B%89%E6%99%AE%E6%8B%89%E6%96%AF%E6%9E%84%E9%80%A0"><span class="toc-nav-number">4.2.2.</span> <span class="toc-nav-text">不同的图拉普拉斯构造</span></a></li></ol></li></ol></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#%E5%AE%9E%E9%AA%8C%E7%BB%93%E6%9E%9C"><span class="toc-nav-number">5.</span> <span class="toc-nav-text">实验结果</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#%E6%80%BB%E7%BB%93"><span class="toc-nav-number">6.</span> <span class="toc-nav-text">总结</span></a></li></ol>
+        
+        </div>
+      </aside>
+    
+
+
+
+      <!-- Sidebar Container -->
+      <div class="
+                col-lg-8 col-lg-offset-1
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+        <!-- Featured Tags -->
+        
+        <section>
+          <!-- no hr -->
+          <h5>
+            <a href="/tags/">FEATURED TAGS</a>
+          </h5>
+          <div class="tags">
+            
+            <a class="tag" href="/tags/#Python" title="Python">Python</a>
+            
+          </div>
+        </section>
+        
+
+        <!-- Friends Blog -->
+        
+        <hr>
+        <h5>FRIENDS</h5>
+        <ul class="list-inline">
+
+          
+          <li>
+            <a href="https://soptq.me/" target="_blank">Soptq</a>
+          </li>
+          
+          <li>
+            <a href="http://beantech.org" target="_blank">Bean Tech</a>
+          </li>
+          
+        </ul>
+        
+      </div>
+    </div>
+  </div>
+</article>
+
+
+
+<!-- anchorjs start -->
+<!-- async load function -->
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script type="text/javascript">
+  // async load function
+  function async (u, c) {
+    var d = document,
+      t = 'script',
+      o = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+    o.src = u;
+    if (c) {
+      o.addEventListener('load', function(e) {
+        c(null, e);
+      }, false);
+    }
+    s.parentNode.insertBefore(o, s);
+  };
+</script>
+<script type="text/javascript">
+  //anchor-js, Doc:http://bryanbraun.github.io/anchorjs/
+  async ("https://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js", function() {
+    anchors.options = {
+      visible: 'hover',
+      placement: 'left',
+      // icon: 'ℬ'
+      icon: '❡'
+    };
+    anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+  });
+</script>
+<style>
+  /* place left on bigger screen */
+  @media all and (min-width: 800px) {
+    .anchorjs-link {
+      position: absolute;
+      left: -0.75em;
+      font-size: 1.1em;
+      margin-top: -0.1em;
+    }
+  }
+</style>
+
+<!-- anchorjs end -->
+
+
+
+		<!-- Footer (contains ThemeColor、viewer) -->
+		<!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center">
+          
+
+          
+            <li>
+              <a target="_blank" href="https://github.com/lhb7">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          
+
+          
+
+          
+
+          
+
+          
+
+          
+            <li>
+              <a target="_blank" href="https://www.zhihu.com/people/BinBin">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa  fa-stack-1x fa-inverse">知</i>
+                </span>
+              </a>
+            </li>
+          
+
+          
+
+        </ul>
+        <p class="copyright text-muted">
+          Copyright &copy;
+          Mr.Li
+          2022
+          <br>
+          Theme by
+          <a target="_blank" rel="noopener" href="http://beantech.org">BeanTech</a>
+          <span style="display: inline-block; margin: 0 5px;">
+            <i class="fa fa-heart"></i>
+          </span>
+          re-Ported by
+          <a target="_blank" rel="noopener" href="https://v-vincen.life/">Live My Life</a>
+          |
+          <iframe style="margin-left: 2px; margin-bottom:-5px;" frameborder="0" scrolling="0" width="91px" height="20px" src="https://ghbtns.com/github-btn.html?user=V-Vincen&repo=V-Vincen.github.io&type=star&count=true"></iframe>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<a id="rocket" href="#top" class=""></a>
+
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="/js/jquery.min.js"></script>
+  <!-- Bootstrap Core JavaScript -->
+  <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+  <!-- Custom Theme JavaScript -->
+  <script type="text/javascript" src="/js/hux-blog.min.js"></script>
+  <!-- catalog -->
+  <script async="true" type="text/javascript" src="/js/catalog.js"></script>
+  <!-- totop(rocket) -->
+  <script async="true" type="text/javascript" src="/js/totop.js"></script>
+
+  
+
+  
+    <!-- Scroll start -->
+    <script async="async" type="text/javascript" src="/js/scroll.js"></script>
+    <!-- Scroll end -->
+  
+
+  
+
+  
+    <!-- Mouseclick -->
+    <script type="text/javascript" src="/js/mouseclick.js" content='The first step is as good as half over...,Laugh and grow fat...,Man proposes God disposes...,When all else is lost the future still remains...,Wasting time is robbing oneself...,Sharp tools make good work...,Cease to struggle and you cease to live...,A friend in need is a friend indeed...,Faith can move mountains...' color='#9933CC,#339933,#66CCCC,#FF99CC,#CCCCFF,#6666CC,#663399,#66CC99,#FF0033'></script>
+  
+
+  
+    <!-- ribbon -->
+    <script type="text/javascript" src="/js/ribbonDynamic.js"></script>
+  
+
+  
+
+
+
+
+
+
+  <!-- viewer start -->
+  <!-- viewer start (Picture preview) -->
+  
+    <script async="async" type="text/javascript" src="/js/viewer/viewer.min.js"></script>
+    <script async="async" type="text/javascript" src="/js/viewer/pic-viewer.js"></script>
+  
+
+  <!-- viewer end -->
+
+
+<script>
+  // async load function
+  function async (u, c) {
+    var d = document,
+      t = 'script',
+      o = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+    o.src = u;
+    if (c) {
+      o.addEventListener('load', function (e) {
+        c(null, e);
+      }, false);
+    }
+    s.parentNode.insertBefore(o, s);
+  }
+
+  // fastClick.js
+  async ("https://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function () {
+    var $nav = document.querySelector("nav");
+    if ($nav)
+      FastClick.attach($nav);
+    }
+  )
+</script>
+
+<!-- Because of the native support for backtick-style fenced code blocks right within the Markdown is landed in Github Pages, From V1.6, There is no need for Highlight.js, so Huxblog drops it officially. -
+https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0 - https://help.github.com/articles/creating-and-highlighting-code-blocks/ -->
+<!-- <script> async ("http://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function () { hljs.initHighlightingOnLoad(); }) </script> <link href="http://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet"> -->
+
+<!-- jquery.tagcloud.js -->
+<!-- <script> // only load tagcloud.js in tag.html if ($('#tag_cloud').length !== 0) { async ("http://yoursite-url/js/jquery.tagcloud.js", function () { $.fn.tagcloud.defaults = { // size: { start: 1, end: 1, unit: 'em' }, color: {
+start: '#bbbbee', end: '#0085a1' } }; $('#tag_cloud a').tagcloud(); }) } </script> -->
+
+
+		<!-- Search -->
+		
+		<div class="popup search-popup local-search-popup">
+  <span class="popup-btn-close">
+    ESC
+  </span>
+  <div class="container">
+    <div class="row">
+      <!-- <div class="col-md-9 col-md-offset-1"> -->
+      <div class="col-lg-9 col-lg-offset-1 col-md-10 col-md-offset-1 local-search-content">
+
+        <div class="local-search-header clearfix">
+
+          <div class="local-search-input-wrapper">
+            <span class="search-icon">
+              <i class="fa fa-search fa-lg" style="margin: 25px 10px 25px 20px;"></i>
+            </span>
+            <input autocomplete="off" placeholder="SEARCH..." type="text" id="local-search-input">
+          </div>
+        </div>
+        <div id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  
+    <script src="/js/ziploader.js"></script>
+  
+  <script>
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.json";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    // monitor main search box;
+    var onPopupClose = function (e) {
+      $('.popup').fadeOut(300);
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $('.popup').fadeIn(300);
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+    // get search zip version
+    $.get('/searchVersion.json?t=' + (+new Date()), function (res) {
+      if (localStorage.getItem('searchVersion') !== res) {
+        localStorage.setItem('searchVersion', res);
+        initSearchJson();
+      }
+    });
+
+    function initSearchJson() {
+      initLoad(['/search.flv'], {
+        loadOptions: {
+          success: function (obj) {
+            localStorage.setItem('searchJson', obj['search.json'])
+          },
+          error: function (e) {
+            return console.log(e)
+          }
+        },
+        returnOptions: {
+          'json': TYPE_TEXT
+        },
+        mimeOptions: {
+          'json': 'application/json'
+        }
+      })
+    }
+    // search function;
+    var searchFunc = function (search_id, content_id) {
+      'use strict';
+      isfetched = true;
+      var datas = JSON.parse(localStorage.getItem('searchJson'));
+      // console.log(search_id)
+      var input = document.getElementById(search_id);
+      var resultContent = document.getElementById(content_id);
+      var inputEventFunction = function () {
+        var searchText = input.value.trim().toLowerCase();
+        var keywords = searchText.split(/[\s\-]+/);
+        if (keywords.length > 1) {
+          keywords.push(searchText);
+        }
+        var resultItems = [];
+        if (searchText.length > 0) {
+          // perform local searching
+          datas.forEach(function (data) {
+            var isMatch = false;
+            var hitCount = 0;
+            var searchTextCount = 0;
+            var title = data.title
+              ? data.title.trim()
+              : '';
+            var titleInLowerCase = title.toLowerCase();
+            var content = data.content
+              ? data.content.trim().replace(/<[^>]+>/g, "")
+              : '';
+            var contentInLowerCase = content.toLowerCase();
+            var articleUrl = decodeURIComponent(data.url);
+
+            var date = data.date;
+            var dateTime = date.replace(/T/, " ").replace(/.000Z/, "");
+            var imgUrl = data.header_img;
+            
+
+
+            var indexOfTitle = [];
+            var indexOfContent = [];
+            // only match articles with not empty titles
+            keywords.forEach(function (keyword) {
+              function getIndexByWord(word, text, caseSensitive) {
+                var wordLen = word.length;
+                if (wordLen === 0) {
+                  return [];
+                }
+                var startPosition = 0,
+                  position = [],
+                  index = [];
+                if (!caseSensitive) {
+                  text = text.toLowerCase();
+                  word = word.toLowerCase();
+                }
+                while ((position = text.indexOf(word, startPosition)) > -1) {
+                  index.push({position: position, word: word});
+                  startPosition = position + wordLen;
+                }
+                return index;
+              }
+              indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+              indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+            });
+            if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+              isMatch = true;
+              hitCount = indexOfTitle.length + indexOfContent.length;
+            }
+            // show search results
+            if (isMatch) {
+              // sort index by position of keyword
+              [indexOfTitle, indexOfContent].forEach(function (index) {
+                index.sort(function (itemLeft, itemRight) {
+                  if (itemRight.position !== itemLeft.position) {
+                    return itemRight.position - itemLeft.position;
+                  } else {
+                    return itemLeft.word.length - itemRight.word.length;
+                  }
+                });
+              });
+              // merge hits into slices
+              function mergeIntoSlice(text, start, end, index) {
+                var item = index[index.length - 1];
+                var position = item.position;
+                var word = item.word;
+                var hits = [];
+                var searchTextCountInSlice = 0;
+                while (position + word.length <= end && index.length != 0) {
+                  if (word === searchText) {
+                    searchTextCountInSlice++;
+                  }
+                  hits.push({position: position, length: word.length});
+                  var wordEnd = position + word.length;
+                  // move to next position of hit
+                  index.pop();
+                  while (index.length != 0) {
+                    item = index[index.length - 1];
+                    position = item.position;
+                    word = item.word;
+                    if (wordEnd > position) {
+                      index.pop();
+                    } else {
+                      break;
+                    }
+                  }
+                }
+                searchTextCount += searchTextCountInSlice;
+                return {hits: hits, start: start, end: end, searchTextCount: searchTextCountInSlice};
+              }
+              var slicesOfTitle = [];
+              if (indexOfTitle.length != 0) {
+                slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+              }
+              var slicesOfContent = [];
+              while (indexOfContent.length != 0) {
+                var item = indexOfContent[indexOfContent.length - 1];
+                var position = item.position;
+                var word = item.word;
+                // cut out 100 characters
+                var start = position - 20;
+                var end = position + 80;
+                if (start < 0) {
+                  start = 0;
+                }
+                if (end < position + word.length) {
+                  end = position + word.length;
+                }
+                if (end > content.length) {
+                  end = content.length;
+                }
+                slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+              }
+              // sort slices in content by search text's count and hits' count
+              slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                  return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                  return sliceRight.hits.length - sliceLeft.hits.length;
+                } else {
+                  return sliceLeft.start - sliceRight.start;
+                }
+              });
+              // select top N slices in content
+              var upperBound = parseInt('1');
+              if (upperBound >= 0) {
+                slicesOfContent = slicesOfContent.slice(0, upperBound);
+              }
+              // highlight title and content
+              function highlightKeyword(text, slice) {
+                var result = '';
+                var prevEnd = slice.start;
+                slice.hits.forEach(function (hit) {
+                  result += text.substring(prevEnd, hit.position);
+                  var end = hit.position + hit.length;
+                  result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                  prevEnd = end;
+                });
+                result += text.substring(prevEnd, slice.end);
+                return result;
+              }
+              var resultItem = '';
+
+              // if (slicesOfTitle.length != 0) {   resultItem += "<li><a target='_blank' href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>"; } else {   resultItem += "<li><a target='_blank' href='" +
+              // articleUrl + "' class='search-result-title'>" + title + "</a>"; } slicesOfContent.forEach(function (slice) {   resultItem += "<a target='_blank' href='" + articleUrl + "'><p class=\"search-result\">" + highlightKeyword(content, slice) +
+              // "...</p></a>"; }); resultItem += "</li>";
+
+              if (slicesOfTitle.length != 0) {
+                resultItem += "<a target='_blank' href='" + articleUrl + "' class='search-result'><div class='search-result-left'><div class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</div><time class='search-result-date'>" + dateTime + "</time>";
+              } else {
+                resultItem += "<a target='_blank' href='" + articleUrl + "' class='search-result'><div class='search-result-left'><div class='search-result-title'>" + title + "</div><time class='search-result-date'>" + dateTime + "</time>";
+              }
+              slicesOfContent.forEach(function (slice) {
+                resultItem += "<p class=\"search-result-content\">" + highlightKeyword(content, slice) + "...</p>";
+              });
+              resultItem += "</div><div class='search-result-right'><img class='media-image' src='" + imgUrl + "' width='64px' height='48px'></img></div></a>";
+
+              resultItems.push({item: resultItem, searchTextCount: searchTextCount, hitCount: hitCount, id: resultItems.length});
+            }
+          })
+        };
+
+        if (keywords.length === 1 && keywords[0] === "") {
+          resultContent.innerHTML = '<div id="no-result"></div>'
+        } else if (resultItems.length === 0) {
+          resultContent.innerHTML = '<div id="no-result"></div>'
+        } else {
+          resultItems.sort(function (resultLeft, resultRight) {
+            if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+              return resultRight.searchTextCount - resultLeft.searchTextCount;
+            } else if (resultLeft.hitCount !== resultRight.hitCount) {
+              return resultRight.hitCount - resultLeft.hitCount;
+            } else {
+              return resultRight.id - resultLeft.id;
+            }
+          });
+          var searchResultList = '<div class=\"search-result-list\">';
+          resultItems.forEach(function (result) {
+            searchResultList += result.item;
+          })
+          searchResultList += "</div>";
+          resultContent.innerHTML = searchResultList;
+        }
+      }
+      if ('auto' === 'auto') {
+        input.addEventListener('input', inputEventFunction);
+      } else {
+        $('.search-icon').click(inputEventFunction);
+        input.addEventListener('keypress', function (event) {
+          if (event.keyCode === 13) {
+            inputEventFunction();
+          }
+        });
+      }
+      // remove loading animation
+      $('body').css('overflow', '');
+      proceedsearch();
+    }
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function (e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc('local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function (e) {
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 && $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+
+    document.addEventListener('mouseup', (e) => {
+      var _con = document.querySelector(".local-search-content");
+      if (_con) {
+        if (!_con.contains(e.target)) {
+          onPopupClose();
+        }
+      }
+    });
+  </script>
+
+
+		
+	<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+</body>
+</html>

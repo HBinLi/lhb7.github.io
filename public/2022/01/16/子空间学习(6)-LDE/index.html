@@ -1,0 +1,1356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag (contains Google-Analytics、Baidu-Tongji)-->
+<head>
+  <!-- Google Analytics -->
+  
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-xxxxxx-xx"></script>
+    <script type="text/javascript">
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'UA-xxxxxx-xx');
+    </script>
+  
+
+  <!-- Baidu Tongji -->
+  
+    <script type="text/javascript">
+      // Originial
+      var _hmt = _hmt || [];
+      (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+      })();
+    </script>
+  
+
+  <!-- Baidu Push -->
+  
+    <script>
+      (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+          bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+          bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+      })();
+    </script>
+  
+
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+  <meta name="google-site-verification" content="lxDfCplOZbIzjhG34NuQBgu2gdyRlAtMB4utP5AgEBc"/>
+  <meta name="baidu-site-verification" content="PpzM9WxOJU"/>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="description" content="It&#39;s an IT blog..."/>
+  <meta name="keyword" content="Bin&#39;s Blog"/>
+  <link rel="shortcut icon" href="/img/avatar/Bin.jpg"/>
+
+  <!-- Place this tag in your head or just before your close body tag. -->
+  <script async="async" defer="defer" src="https://buttons.github.io/buttons.js"></script>
+
+  
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css"/>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/beantech.min.css"/>
+
+    <!-- Pygments Highlight CSS -->
+    <link rel="stylesheet" href="/css/highlight.css"/>
+    <link rel="stylesheet" href="/css/widget.css"/>
+    <link rel="stylesheet" href="/css/rocket.css"/>
+    <link rel="stylesheet" href="/css/signature.css"/>
+    <link rel="stylesheet" href="/css/catalog.css"/>
+    <link rel="stylesheet" href="/css/livemylife.css"/>
+
+    
+      <!-- wave start -->
+      <link rel="stylesheet" href="/css/wave.css"/>
+      <!-- wave end -->
+    
+
+    
+      <!-- top start (article top hot config) -->
+      <link rel="stylesheet" href="/css/top.css"/>
+      <!-- top end -->
+    
+
+    
+      <!-- ThemeColor start -->
+      <link rel="stylesheet" href="/css/scroll.css"/>
+      <!-- ThemeColor end -->
+    
+
+    
+      <!-- viewer start (Picture preview) -->
+      <link rel="stylesheet" href="/css/viewer.min.css"/>
+      <!-- viewer end -->
+    
+
+    
+      <!-- Search start -->
+      <link rel="stylesheet" href="/css/search.css"/>
+      <!-- Search end -->
+    
+
+    
+      <!-- ThemeColor start -->
+      <link rel="stylesheet" href="/css/themecolor.css"/>
+      <!-- ThemeColor end -->
+    
+
+    
+
+    
+      <!-- gitalk start -->
+      <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css"> -->
+      <link rel="stylesheet" href="/css/gitalk.css"/>
+      <!-- gitalk end -->
+    
+  
+
+  <!-- Custom Fonts -->
+  <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+  <!-- Hux change font-awesome CDN to qiniu -->
+  <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.5.0/css/font-awesome.min.css" type="text/css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Hux Delete, sad but pending in China <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'> <link
+  href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/ css'> -->
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script> <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script> <![endif]-->
+
+  <!-- ga & ba script hoook -->
+  <link rel="canonical" href="http://yoursite-url/2022/01/16/子空间学习(6)-LDE/">
+  <title>
+    
+      子空间学习(6)-LDE - Bin&#39;s Blog
+    
+  </title>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<!-- hack iOS CSS :active style -->
+
+	<body ontouchstart="" class="body--light body--light">
+
+
+		<!-- ThemeColor -->
+		
+		<!-- ThemeColor -->
+<style type="text/css">
+  .body--light {
+    --light-mode: none;
+    --dark-mode: block;
+  }
+  .body--dark {
+    --light-mode: block;
+    --dark-mode: none;
+  }
+  i.mdui-icon.material-icons.light-mode {
+    display: var(--light-mode);
+  }
+  i.mdui-icon.material-icons.dark-mode {
+    display: var(--dark-mode);
+  }
+</style>
+<div class="toggle" onclick="document.body.classList.toggle('body--dark')">
+  <i class="mdui-icon material-icons light-mode"></i>
+  <i class="mdui-icon material-icons dark-mode"></i>
+</div>
+<script>
+  //getCookieValue
+  function getCookieValue(a) {
+    var b = document.cookie.match('(^|[^;]+)\\s*' + a + '\\s*=\\s*([^;]+)');
+    return b
+      ? b.pop()
+      : '';
+  }
+  let themeMode = 'light';
+  if (getCookieValue('sb-color-mode') && (getCookieValue('sb-color-mode') !== themeMode)) {
+    let dbody = document.body.classList;
+    themeMode === 'dark' ? dbody.remove('body--dark') : dbody.add('body--dark');
+  }
+
+  //setCookieValue
+  var toggleBtn = document.querySelector(".toggle");
+  toggleBtn.addEventListener("click", function () {
+    var e = document.body.classList.contains("body--dark");
+    var cookieString = e
+      ? "dark"
+      : "light";
+    var exp = new Date();
+    exp.setTime(exp.getTime() + 3 * 24 * 60 * 60 * 1000); //3天过期
+    document.cookie = "sb-color-mode=" + cookieString + ";expires=" + exp.toGMTString() + ";path=/";
+  });
+</script>
+
+		
+
+		<!-- Gitter -->
+		
+		<!-- Gitter -->
+<!-- Docs:https://gitter.im/?utm_source=left-menu-logo -->
+<script>
+  ((window.gitter = {}).chat = {}).options = {
+    room: 'your-community/your-room'
+  };
+</script>
+<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+
+		
+
+		<!-- Navigation (contains search)-->
+		<!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header page-scroll">
+      <button type="button" class="navbar-toggle">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">An Ordinary Life</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <!-- Known Issue, found by Hux: <nav>'s height woule be hold on by its content. so, when navbar scale out, the <nav> will cover tags. also mask any touch event of tags, unfortunately. -->
+    <div id="huxblog_navbar">
+      <div class="navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="/">HOME</a>
+          </li>
+
+          
+          
+          <li>
+            <a href="/about/">
+              
+              ABOUT
+              
+              
+            </a>
+          </li>
+          
+          
+          
+          <li>
+            <a href="/archive/">
+              
+              ARCHIVES
+              
+              
+            </a>
+          </li>
+          
+          
+          
+          <li>
+            <a href="/tags/">
+              
+              TAGS
+              
+              
+            </a>
+          </li>
+          
+          
+          
+          
+          
+          <li>
+            <a href="/categories/">
+              
+              CATEGORIES
+              
+              
+            </a>
+          </li>
+          
+          
+
+          
+          <li>
+            <a class="popup-trigger">
+              <span class="search-icon"></span>SEARCH</a>
+          </li>
+          
+
+          <!-- LangSelect -->
+          
+        </ul>
+      </div>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container -->
+</nav>
+<!-- progress -->
+<div id="progress">
+  <div class="line" style="width: 0%;"></div>
+</div>
+
+<script>
+  // Drop Bootstarp low-performance Navbar Use customize navbar with high-quality material design animation in high-perf jank-free CSS3 implementation
+  var $body = document.body;
+  var $toggle = document.querySelector('.navbar-toggle');
+  var $navbar = document.querySelector('#huxblog_navbar');
+  var $collapse = document.querySelector('.navbar-collapse');
+
+  $toggle.addEventListener('click', handleMagic)
+
+  function handleMagic(e) {
+    if ($navbar.className.indexOf('in') > 0) {
+      // CLOSE
+      $navbar.className = " ";
+      // wait until animation end.
+      setTimeout(function() {
+        // prevent frequently toggle
+        if ($navbar.className.indexOf('in') < 0) {
+          $collapse.style.height = "0px"
+        }
+      }, 400)
+    } else {
+      // OPEN
+      $collapse.style.height = "auto"
+      $navbar.className += " in";
+    }
+  }
+</script>
+
+
+		<!-- Post Header (contains intro-header、signature、wordcount、busuanzi、waveoverlay) -->
+		<!-- Modified by Yu-Hsuan Yen -->
+<!-- Post Header -->
+
+  <style type="text/css">
+    .body--light {
+      /* intro-header */
+      --intro-header-background-image-url-home: url('/img/header_img/newhome_bg.jpg');
+      --intro-header-background-image-url-post: url('/img/header_img/lml_bg.jpg');
+      --intro-header-background-image-url-page: url('//img/header_img/lml_bg.jpg');
+    }
+    .body--dark {
+      --intro-header-background-image-url-home: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('/img/header_img/newhome_bg.jpg');
+      --intro-header-background-image-url-post: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('/img/header_img/lml_bg.jpg');
+      --intro-header-background-image-url-page: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('//img/header_img/lml_bg.jpg');
+    }
+
+    header.intro-header {
+       /*post*/
+        background-image: var(--intro-header-background-image-url-post);
+        /* background-image: url('/img/header_img/lml_bg.jpg'); */
+      
+    }
+
+    
+  </style>
+
+
+
+
+
+<header class="intro-header">
+  <!-- Signature -->
+  <div id="signature">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+          
+          <div class="post-heading">
+            <div class="tags">
+              
+              <a class="tag" href="/tags/#Python" title="Python">Python</a>
+              
+            </div>
+            <h1>子空间学习(6)-LDE</h1>
+            <h2 class="subheading">Subspace Learning-LDE</h2>
+            <span class="meta">
+              Posted by Mr.Li on
+              2022-01-16
+            </span>
+
+
+            
+            <!-- WordCount start -->
+            <div class="blank_box"></div>
+            <span class="meta">
+              Estimated Reading Time <span class="post-count">20</span> Minutes
+            </span>
+            <div class="blank_box"></div>
+            <span class="meta">
+              Words <span class="post-count">4.4k</span> In Total
+            </span>
+            <div class="blank_box"></div>
+            <!-- WordCount end -->
+            
+            
+
+
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <!-- waveoverlay start -->
+  <div class="preview-overlay">
+    <svg class="preview-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+      <defs>
+        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+      </defs>
+      <g class="preview-parallax">
+        <use xlink:href="#gentle-wave" x="48" y="0" fill=var(--gentle-wave1)></use>
+        <use xlink:href="#gentle-wave" x="48" y="3" fill=var(--gentle-wave2)></use>
+        <use xlink:href="#gentle-wave" x="48" y="5" fill=var(--gentle-wave3)></use>
+        <use xlink:href="#gentle-wave" x="48" y="7" fill=var(--gentle-wave)></use>
+      </g>
+    </svg>
+  </div>
+  <!-- waveoverlay end -->
+  
+
+</header>
+
+
+
+		<!-- Main Content (Post contains
+	Pager、
+	tip、
+	socialshare、
+	gitalk、gitment、disqus-comment、
+	Catalog、
+	Sidebar、
+	Featured-Tags、
+	Friends Blog、
+	anchorjs、
+	) -->
+		<!-- Modify by Yu-Hsuan Yen -->
+<!-- Post Content -->
+<article>
+  <div class="container">
+    <div class="row">
+      <!-- Post Container -->
+      <div class="col-lg-8 col-lg-offset-1 col-md-10 col-md-offset-1 post-container">
+
+        <blockquote>
+<p>子空间学习系列主要讨论从PCA发表开始到2010年中，子空间学习相关论文。本文立足于论文：<strong>Local Discriminant Embedding and Its Variants（2005 CVPR）</strong>。基于此进行概念的梳理和思考，尝试从数学的角度去阐述LDE，除此之外简要介绍Eigenfaces和Fisherfaces，然后会对LPP和NPE（见-子空间学习(4)-LPP&amp;NPE）进行一些拓展。</p>
+</blockquote>
+<h1 id="摘要："><a href="#摘要：" class="headerlink" title="摘要："></a>摘要：</h1><p>信息处理中的许多问题都涉及某种形式的降维。因此，人们对降维算法很感兴趣。不同于 Eigenface旨在选择最大化所有类的总散射的投影，我们将介绍两种旨在最大化类间距离和类内距离的比率的子空间学习算法：Fisherfaces更关注数据的全局结构，而Local Discriminant Embedding (LDE) 更关注数据的局部关系和类的关系。然而，不关注局部关系使Fisherface从先验上有一定局限性。此外，LDE 通过保留同一类数据点的内在相邻关系来解决该问题，同时使不同类的相邻点不再相互粘连。在本报告中，我们尝试以数学方式解释 Fisherface 和 LDE 的主要思想，并像 LDE 一样扩展邻域保留嵌入 (NPE) 和局部保留投影 (LPP) 。此外，还包括对人脸识别的全面比较和广泛的实验，以探索 Fisherface 和 LDE 的有效性。本文的解释会比较简略只提重点部分。需要注意的是本文有下划线的部分是一些需要了解的基础概念，由于篇幅，我就不在后面解释，望读者自行查阅。</p>
+<h1 id="Fisherfaces"><a href="#Fisherfaces" class="headerlink" title="Fisherfaces"></a>Fisherfaces</h1><h2 id="Fisher-criterion"><a href="#Fisher-criterion" class="headerlink" title="Fisher criterion"></a>Fisher criterion</h2><p>Fisher criterion是一个判别准则函数，由类间散点距离与类内散点距离的比率定义。 通过最大化这一标准，可以获得最优的判别投影轴。 在样本被投影到这个投影轴上之后，类内散布被最小化，类间散布被最大化。</p>
+<h2 id="Motivation"><a href="#Motivation" class="headerlink" title="Motivation"></a>Motivation</h2><p>Eigenfaces 旨在选择一种降维线性投影，使所有投影样本的分散度最大化。 因此，Eigenfaces 不能很好地处理非线性数据，并且没有考虑类间和类内散点之间的关系。Fisherfaces则考虑了类间和类内散点之间的关系。类间$S_{B}$和类内$S_{W}$散布矩阵是类间散布和类内散布的表示，它们的数学形式如公式(1)：</p>
+<script type="math/tex; mode=display">
+\begin{equation}
+    \begin{gathered}
+     S_{W}=\sum_{i=1}^{N}(x^{c_{i}}-\bar{x}^{c})(x^{c_{i}}-\bar{x}^{c})^{T}\\
+    S_{B}=\sum_{c=1}^{N_{c}}n_{c}(\bar{x}^{c}-\bar{x})(\bar{x}^{c}-\bar{x})^{T},
+    \end{gathered}
+\end{equation}\tag{1}</script><p>其中 $\bar{x}^{c}$ 是 $c_{th}$ 类的平均值，$\bar{x}$ 是所有样本的平均值，$x^{c_{i}}$ 是 $c_{th}$ 类中的 $i_{th}$ 样本。</p>
+<h2 id="Fisherface-vs-Eigenface"><a href="#Fisherface-vs-Eigenface" class="headerlink" title="Fisherface vs Eigenface"></a>Fisherface vs Eigenface</h2><p>Eigenface 和 Fisherface 在动机、目标函数、监督方法上是不同的，见下文讨论。</p>
+<p>Eigenface 旨在寻找线性投影后数据方差最大的投影方向，而 Fisherface 则通过最大化类间和类内分散之间的比率来寻找一条线，来有效区分不同类。</p>
+<p>Eigenface 和 Fisherface 的目标函数根据不同的动机，也有所不同。 Eigenface 的目标函数是公式(2)：</p>
+<script type="math/tex; mode=display">
+\begin{equation}
+    \begin{gathered}
+    \underset{W^{T}W=1}{\arg \min}\ \  (W)^{T}CW \ \ with\\
+    C=\frac{1}{N}\sum_{i=1}^{N}(x_{i}-\bar{x})(x_{i}-\bar{x})^{T},
+    \end{gathered}
+\end{equation}\tag{2}</script><p>其中 $C$ 是协方差矩阵，$\bar{x}$ 是所有样本的平均值。</p>
+<p>Fisherface 的目标函数是最大化类间方差 $S_{B}$ 和类内方差 $S_{W}$ 的比率，见公式(3)：</p>
+<script type="math/tex; mode=display">
+\begin{equation}
+    \begin{gathered}
+    W =\arg \max _{W}\ \frac{\left|\left(W\right)^{T}W_{pca}^{T}S_{B}W_{pca} W\right|}{\left|\left(W\right)^{T}W_{pca}^{T}S_{W}W_{pca}W\right|}=[w_{1},\cdots,w_{m}]\\
+    \text{s.t. }(W)^{T} S_{W} W=1.
+    \end{gathered}
+\end{equation}\tag{3
+
+}</script><p>Eigenface 是一种无监督的维数算法，而 Fisherface 是有监督的。 Fisherface 与 Eigenface 相比具有以下优势：</p>
+<ul>
+<li>虽然 Eigenface 实现了更大的总散射，但 FLD 实现了更大的类间散射，因此简化了分类。</li>
+<li>Fisherface 可用于分类，而 Eigenface 不能。</li>
+</ul>
+<p>然而，Fisherface 只能将维度减少到类别数减 1，而 Eigenface 则没有这个限制。</p>
+<h2 id="Mathematical-Details"><a href="#Mathematical-Details" class="headerlink" title="Mathematical Details"></a>Mathematical Details</h2><p>拉格朗日方法用于解决方程中的优化问题公式(3)，请参见以下推导：</p>
+<script type="math/tex; mode=display">
+\begin{equation}\nonumber
+    \begin{gathered}
+        \mathcal{L}=W^{T}W_{pca}^{T}S_{B}W_{pca}W-\lambda W^{T}W_{pca}^{T}S_{W}W_{pca}W\\
+        \frac{\partial \mathcal{L}}{\partial W}=2\left(W_{pca}^{T}S_{B}W_{pca}W-\lambda W_{pca}^{T}S_{W}W_{pca}W\right)=0\\
+        S_{W}^{-1}S_{B}W_{pca}W=\lambda W_{pca}W.
+    \end{gathered}
+\end{equation}</script><p>此外，可以应用 SVD 或特征分解来解决上述问题。 选取$m$个最大特征值对应的特征向量形成$W$：</p>
+<script type="math/tex; mode=display">
+\begin{equation}
+    \begin{gathered}
+        S_{W}^{-1}S_{B}W_{pca}W_{i}=\lambda_{i} W_{pca}W_{i}\\
+        sort(\lambda_{1},\cdots,\lambda_{n})\\
+        W=[W_{n-m+1},\cdots,W_{n}].
+    \end{gathered}
+\end{equation}</script><h1 id="Local-Discriminant-Embedding"><a href="#Local-Discriminant-Embedding" class="headerlink" title="Local Discriminant Embedding"></a>Local Discriminant Embedding</h1><p>在这里介绍三种LDE，最开始的LDE，2DLDE和Kernel LDE。</p>
+<h2 id="LDE"><a href="#LDE" class="headerlink" title="LDE"></a>LDE</h2><p>与 Eigenface 不同，LDE 中使用数据的局部关系和类关系来构建嵌入。 此外，LDE 没有 Eigenface 的限制。 在本节中，我们将详细介绍 LDE。<br>LDE 旨在保持内在的相邻关系，而不同类别的相邻点不再相互粘连。<br>在低维嵌入子空间中，如果相邻点具有相同的标签，LDE 希望保持相邻点靠近，而防止其他类的点进入邻域。 考虑到这两个方面，LDE 的目标函数为公式(4)：</p>
+<script type="math/tex; mode=display">
+\begin{equation}
+    \begin{gathered}
+        \underset{V}{\arg \max}\ \ J(V)=\sum_{i,j}\|V^{T}x_{i}-V^{T}x_{j}\|^{2}W_{ij}^{\prime}\\
+        \text{s.t. }\sum_{i,j}\|V^{T}x_{i}-V^{T}x_{j}\|^{2}w_{ij}=1,
+    \end{gathered}
+\end{equation}\tag{4}</script><p>其中 $V$ 是一个 $n\times l$ 矩阵，$V$ 是线性投影 $\textbf{z}=V^{T}x$。</p>
+<h2 id="2DLDE"><a href="#2DLDE" class="headerlink" title="2DLDE"></a>2DLDE</h2><p>受到少量训练数据的限制，无法准确近似底层流形。 2DLDE 尝试将图像（数据）视为矩阵，并根据矩阵形式解决子空间学习问题。 此外，当已知图像的变化是由translation, pitch或yaw引起时，2DLDE 比基于矢量的公式具有显着的优势。</p>
+<p>令 $\{A_{i}|A_{i}\in\mathcal{R}^{n_{1}\times n_{2}}\}$ 为训练数据。 然后，我们修改了矩阵的 LDE，矩阵-向量乘法 $\textbf{z}_{i}=V^{T}x_{i}$ 应改为双边形式 $B_{i}= L^{T}A_{i}R$，其中 $L\in \mathcal{R}^{n_{1}\times l_{1}}$ 和 $R\in \mathcal{R}^{n_{ 2}\times l_{2}}$ 将$A_{i}$ 转换成一个更小的矩阵$B_{i}\in\mathcal{R}^{l_{1}\times l_{2}}$。 因此，目标函数公式(4)可以重写为公式(5)，</p>
+<script type="math/tex; mode=display">
+\begin{equation}
+    \begin{gathered}
+        \underset{L,R}{\arg \max}\ \ Q(L, R)=\sum_{i, j}\left\|L^{T} A_{i} R-L^{T} A_{j} R\right\|_{F}^{2} w_{i j}^{\prime} \\
+    \text {s.t. } \sum\left\|L^{T} A_{i} R-L^{T} A_{j} R\right\|_{F}^{2} W_{i j}=1,
+    \end{gathered}
+\end{equation}\tag{5}</script><p>其中 Frobenius 矩阵范数为 $|A|_{F}=(\sum_{j,k}a_{j,k}^{2})^{\frac{1}{2}}=tr( AA^{T})$。 通过使用拉格朗日乘子法和特征分解，通过迭代直到收敛得到$L$和$R$。 然后，我们通过测试点$\bar{A}$计算$\bar{B}=L^{T}\bar{A}R$，找到它的最近邻$B_{i}$，使得$\ |B_{i}=\bar{B}|_{F}$，并将标签指定为 $\bar{y}=y_{i}$。</p>
+<h2 id="Kernel-LDE"><a href="#Kernel-LDE" class="headerlink" title="Kernel LDE"></a>Kernel LDE</h2><p>受到线性学习算法有限分类能力的启发。 Kernel LDE 试图通过非线性映射将输入数据转换到更高维空间来提升分类性能。 因此，Kernel LDE 在处理非线性降维问题方面优于 LDE。</p>
+<p>假设非线性映射为$\Phi:\mathcal{R}^{n}\rightarrow \mathcal{F}$，$\mathcal{F}$为特征空间。 因此，局部判别嵌入在 $\mathcal{F}$ 中的投影方向 $v$ 是 $v=\sum_{i}^{m}\alpha_{i}\Phi(x_{i})=\sum_{ i}^{m}\alpha_{i}k(x_{i},\bar{x})$, $\boldsymbol{\alpha}_{i}$ 是膨胀系数。 目标函数(5)可以重写为公式(6)，</p>
+<script type="math/tex; mode=display">
+\begin{equation}
+    \begin{gathered}
+         \underset{\boldsymbol{\alpha}}{\arg \max}\ \ U(\boldsymbol{\alpha})=\boldsymbol{\alpha}^{T} K\left(D^{\prime}-W^{\prime}\right) K \boldsymbol{\alpha} \\
+         \text{s.t. }\boldsymbol{\alpha}^{T} K(D-W) K \boldsymbol{\alpha}=1,
+    \end{gathered}
+\end{equation}\tag{6}</script><p>其中 $K$ 是一个核矩阵，$K_{i,j}=k(x_{i},x_{j})$, 并且 $\boldsymbol{\alpha}=[\alpha_{1},\cdots, \alpha_{n}]^{T}$ 由膨胀系数组成。 $D$ ($D_{ii}=\sum_{j}W_{ij}$) 是一个对角矩阵，其条目是 $W$ 的列（或行，因为 $W$ 是对称的）和。</p>
+<h1 id="拓展LPP和NPE"><a href="#拓展LPP和NPE" class="headerlink" title="拓展LPP和NPE"></a>拓展LPP和NPE</h1><p>我们探讨了 LPP 是否可以扩展到2D和核函数方法。 此外，NPE 是对 Laplace Beltrami 算子的特征函数的另一种线性逼近。 因此，我们探索如何扩展 NPE，就像 LDE 对 LPP 所做的那样。</p>
+<h2 id="2DLPP"><a href="#2DLPP" class="headerlink" title="2DLPP"></a>2DLPP</h2><p>LPP 的目标函数是最小化重建误差，见公式(7)：</p>
+<script type="math/tex; mode=display">
+\begin{equation}
+    \begin{gathered}
+        \arg \min_{Y^{T}}\sum_{i,j}(y_{i}-y_{j})^{2}W_{ij}=2(\boldsymbol{a}^{T}X)L(\boldsymbol{a}^{T}X)^{T} \\
+        \text{ s.t. }(\boldsymbol{a}^{T}X)D(\boldsymbol{a}^{T}X)^{T}=1,\ \boldsymbol{y}^{T}=\boldsymbol{a}^{T}X.
+    \end{gathered}
+\end{equation}\tag{7}</script><p>根据公式(5)，我们可以把LPP的目标函数公式(7)变成公式(8)，</p>
+<script type="math/tex; mode=display">
+\begin{equation}
+    \begin{gathered}
+        \arg \min_{L,R}\ \ \sum_{i,j}\|L^{T}A_{i}R-L^{T}A_{j}R\|^{2}W_{ij} \\
+        \text{ s.t. } (L^{T}A_{i}R)D(L^{T}A_{i}R)^{T}=1.
+    \end{gathered}
+\end{equation}\tag{8}</script><h2 id="Kernel-LPP"><a href="#Kernel-LPP" class="headerlink" title="Kernel LPP"></a>Kernel LPP</h2><p>假设$\mathcal{F}$中的点积可以通过核函数$k(x_{1},x_{2})=\Phi(x_{1})^{T}\Phi(x_{ 2})$。 与公式(6)中的假设，我们可以重写 LPP 的目标函数公式(7)为公式(9)：</p>
+<script type="math/tex; mode=display">
+\begin{equation}
+    \begin{gathered}
+        \arg \min_{Y^{T}}\sum_{i,j}(y_{i}-y_{j})^{2}W_{ij}=2(\boldsymbol{a}^{T}K)L(\boldsymbol{a}^{T}K)^{T} \\
+        \text{ s.t. }(\boldsymbol{a}^{T}K)L(\boldsymbol{a}^{T}K)^{T}=1,\ \boldsymbol{y}^{T}=\boldsymbol{a}^{T}X,
+    \end{gathered}
+\end{equation}\tag{9}</script><p>其中 $K$ 是一个核矩阵，$K_{ij}=\Phi(x_{i},x_{j})$, 并且 $\boldsymbol{\alpha}=[\alpha_{1},\cdots,\ alpha_{n}]$ 由膨胀系数组成。</p>
+<h2 id="拓展NPE"><a href="#拓展NPE" class="headerlink" title="拓展NPE"></a>拓展NPE</h2><p>LPP 线性逼近 Laplace Beltrami 算子 $\mathcal{L}$ 的特征函数，而 NPE 中的矩阵 $M$ 提供了 $\mathcal{L}^{2}$ 的离散逼近。 NPE 的目标函数是最小化重构误差，见公式(10)：</p>
+<script type="math/tex; mode=display">
+\begin{equation}
+    \begin{aligned}
+        \arg \min_{W} E(W) &= \sum_{i}\|x_{i}-\sum_{j}W_{ij}x_{ij}\|^2 \\
+        \arg \min_{Y} \Phi(Y) &= \sum_{i}\|y_{i}-\sum_{j}W_{ij}y_{ij}\|^2 \\
+        &=\boldsymbol{y}^{T}M\boldsymbol{y}=\boldsymbol{a}^{T}XMX^{T}\boldsymbol{a}
+    \end{aligned}
+\end{equation}\tag{10}</script><script type="math/tex; mode=display">
+\text{ s.t. }  \sum_{j}W_{ij}=1,\ \boldsymbol{a}^{T}XX^{T}\boldsymbol{a}=1,\ \boldsymbol{y}=\boldsymbol{a}^{T}X,</script><p>其中 $I=diag(1,\cdots,1)$。 此外，我们探讨了 LDE 对 LPP 的作用并扩展了 NPE。 $\mathcal{R}^{n}$中的数据点$\{x_{1}\}_{i=1}^{m}$可以改写为数据矩阵$X=[x_{1}， \cdots,x_{m}]\in\mathcal{R}^{n\times m}$. 然后，我们通过以下步骤扩展 NPE。</p>
+<ul>
+<li><p>构建邻域图：对于无向图 $G$ 和 $G^{\prime}$，考虑同一类的每一对点 $x_{i}$ 和 $x_{j}$ ($y_{i}=y_{j}$ ) 和不同的类 ($y_{i}\neq y_{j}$)，如果 $x_{j}$ 是$x_{i}$的$k$个最近邻居之一，那就在$x_{i}$和$x_{j}$之间加一条边。</p>
+</li>
+<li><p>计算权重矩阵：对 $G$ 的矩阵 $W$ 加权</p>
+<script type="math/tex; mode=display">
+     w_{ij}=e^{\frac{-\|x_{i}-x_{j}\|^{2}}{t}}。</script><p>默认情况下，如果 $x_{i}$ 和 $x_{j}$ 没有连接，则 $w_{ij}=0$。 很明显，如此定义的 $W$ 是一个 $m \times m$，稀疏对称矩阵。</p>
+</li>
+<li><p>找到对应于 $l$ 最大特征值的广义特征向量 $v_{1}, v_{2},\cdots, v_{l}$，</p>
+<script type="math/tex; mode=display">
+\begin{equation}
+        XM^{\prime}X^{T}v=\lambda XMX^{T}v,
+\end{equation}</script><p>其中 $M=(I-W)^{T}(I-W)$ 和 $M^{\prime}=(I-W^{\prime})^{T}(I-W^{\prime})$ 是对称矩阵。 $x_{i}$ 的嵌入由 $z_{i}=V^{T}x_{i}$ 完成，其中 $V=[v_{1},\cdots,v_{l}]$。</p>
+</li>
+</ul>
+<p>更进一步，上面的特征分解问题旨在保持相同标签的相邻点靠近，同时防止其他类的点进入邻域。 此外，NPE的目标函数可以变为公式(11)：</p>
+<script type="math/tex; mode=display">
+\begin{equation}
+    \begin{gathered}
+        \arg \min_{W} E(W^{\prime}) = \sum_{i,j}\|x_{i}-W_{ij}^{\prime}x_{ij}\|^2 \\
+        \arg \min_{Y} \Phi(Y) = \sum_{i,j}\|V^{T}x_{i}-W_{ij}^{\prime}V^{T}x_{ij}\|^2 \\
+        \text{s.t. }\sum_{i,j}\|V^{T}x_{i}-W_{ij}V^{T}x_{ij}\|^2=1.
+    \end{gathered}
+\end{equation}</script><h1 id="讨论"><a href="#讨论" class="headerlink" title="讨论"></a>讨论</h1><p>这里主要讨论一下LDE与之前的算法的区别：</p>
+<p>Eigenface 旨在通过将数据在最大方差的方向投影来保持全局欧几里得结构，而 NPE 和 LPP 旨在通过最小化重构误差来保持局部流形结构。 此外，Eigenface、LPP 和 NPE 是无监督方法。 然而，Fisherface 和 LDE 是有监督的方法。 Fisherface 旨在通过最小化类内距离和类间距离之间的比率来寻找最有效的辨别方向。 此外，LDE 受到 Fisherface 的启发，并在 LPP 的基础上进行了改进。 因此，LDE 旨在通过最小化邻域中类内距离和类间距离之间的比率来保持内在的邻域关系。</p>
+<h1 id="实验结果"><a href="#实验结果" class="headerlink" title="实验结果"></a>实验结果</h1><p>主要是本节相关算法的代码，这里只贴LDE有关的，因为太多了。至于拓展LPP和NPE的，我之后应该会上传到github上：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> scipy</span><br><span class="line"><span class="keyword">from</span> SubspaceLearning.Kernel <span class="keyword">import</span> kernel</span><br><span class="line"><span class="keyword">import</span> math</span><br><span class="line"></span><br><span class="line"><span class="comment">#构造最经典的权重矩阵</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">construct_graph</span>(<span class="params">data, label, k, t</span>):</span></span><br><span class="line">    clusters = np.unique(label)</span><br><span class="line">    class_i = []</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> clusters:</span><br><span class="line">        class_i.append(label[:] == i)</span><br><span class="line">    class_i = np.asarray(class_i)</span><br><span class="line">    n = data.shape[<span class="number">0</span>]</span><br><span class="line">    W_full = np.zeros((n, n))</span><br><span class="line">    SW = np.zeros((n, n))</span><br><span class="line">    SB = np.zeros((n, n))</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(n):</span><br><span class="line">        <span class="keyword">for</span> j <span class="keyword">in</span> <span class="built_in">range</span>(i, n):</span><br><span class="line">            dist = np.linalg.norm(data[i] - data[j])</span><br><span class="line">            W_full[i][j] = math.exp(-(dist ** <span class="number">2</span> / (t)))</span><br><span class="line">            W_full[j][i] = W_full[i][j]</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(n):</span><br><span class="line">        <span class="comment"># G within</span></span><br><span class="line">        cl = label[i]</span><br><span class="line">        sl = class_i[cl][:]  <span class="comment"># same label :true or false</span></span><br><span class="line">        slindex = np.array(np.where(sl == <span class="literal">True</span>))[<span class="number">0</span>, :]  <span class="comment"># within</span></span><br><span class="line">        nslindex = np.array(np.where(sl == <span class="literal">False</span>))[<span class="number">0</span>, :]  <span class="comment"># between class</span></span><br><span class="line">        W_sl = W_full[i][sl]</span><br><span class="line">        W_nsl = W_full[i][~sl]</span><br><span class="line">        index = np.argsort(W_sl)[<span class="number">1</span>:k + <span class="number">1</span>]</span><br><span class="line">        nindex = np.argsort(W_nsl)[<span class="number">0</span>:k]</span><br><span class="line">        SW[i][slindex[index]] = W_full[i][slindex[index]]</span><br><span class="line">        SB[i][nslindex[nindex]] = W_full[i][nslindex[nindex]]</span><br><span class="line">    <span class="keyword">return</span> SW, SB</span><br><span class="line"></span><br><span class="line"><span class="comment">#构造01的权重矩阵</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">construct_graph_01</span>(<span class="params">data, label, k</span>):</span></span><br><span class="line">    clusters = np.unique(label)</span><br><span class="line">    class_i = []</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> clusters:</span><br><span class="line">        class_i.append(label[:] == i)</span><br><span class="line">    class_i = np.asarray(class_i)</span><br><span class="line">    n = data.shape[<span class="number">0</span>]</span><br><span class="line">    W_full = np.ones((n, n))</span><br><span class="line">    SW = np.zeros((n, n))</span><br><span class="line">    SB = np.zeros((n, n))</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(n):</span><br><span class="line">        <span class="comment"># G within</span></span><br><span class="line">        cl = label[i]</span><br><span class="line">        sl = class_i[cl][:]  <span class="comment"># same label :true or false</span></span><br><span class="line">        slindex = np.array(np.where(sl == <span class="literal">True</span>))[<span class="number">0</span>, :]  <span class="comment"># within</span></span><br><span class="line">        nslindex = np.array(np.where(sl == <span class="literal">False</span>))[<span class="number">0</span>, :]  <span class="comment"># between class</span></span><br><span class="line">        W_sl = W_full[i][sl]</span><br><span class="line">        W_nsl = W_full[i][~sl]</span><br><span class="line">        index = np.argsort(W_sl)[<span class="number">1</span>:k + <span class="number">1</span>]</span><br><span class="line">        nindex = np.argsort(W_nsl)[<span class="number">0</span>:k]</span><br><span class="line">        SW[i][slindex[index]] = W_full[i][slindex[index]]</span><br><span class="line">        SB[i][nslindex[nindex]] = W_full[i][nslindex[nindex]]</span><br><span class="line">    <span class="keyword">return</span> SW, SB</span><br><span class="line"></span><br><span class="line"><span class="comment">#计算拉普拉斯矩阵</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">Lap</span>(<span class="params">W</span>):</span></span><br><span class="line">    D = np.diag(np.<span class="built_in">sum</span>(W, axis=<span class="number">0</span>))</span><br><span class="line">    <span class="keyword">return</span> D - W</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">LDE</span>(<span class="params">data, train_data, train_label, component, k, t</span>):</span></span><br><span class="line">    SW, SB = construct_graph(train_data, train_label, k, t)</span><br><span class="line">    SW = np.array((SW, SW.T)).<span class="built_in">max</span>(axis=<span class="number">0</span>)</span><br><span class="line">    LW = Lap(SW)</span><br><span class="line">    SB = np.array((SB, SB.T)).<span class="built_in">max</span>(axis=<span class="number">0</span>)</span><br><span class="line">    LB = Lap(SB)</span><br><span class="line">    X = train_data.T</span><br><span class="line">    XLWXT = X.dot(LW).dot(X.T)</span><br><span class="line">    XLBXT = X.dot(LB).dot(X.T)</span><br><span class="line">    XLWXT = XLWXT + np.exp(-<span class="number">5</span>) * np.eye(XLWXT.shape[<span class="number">0</span>])</span><br><span class="line">    T = scipy.linalg.inv(XLWXT).dot(XLBXT)</span><br><span class="line">    eigVals, eigVects = np.linalg.eigh(T)</span><br><span class="line">    eigValInd = np.argsort(eigVals)</span><br><span class="line">    eigValInd = eigValInd[:(-component - <span class="number">1</span>):-<span class="number">1</span>]</span><br><span class="line">    w = eigVects[:, eigValInd]</span><br><span class="line">    data_ndim = np.dot(data, w)</span><br><span class="line">    <span class="keyword">return</span> data_ndim</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">ddLDE</span>(<span class="params">data, train_data, train_label, component1, component2, k, t</span>):</span></span><br><span class="line">    n = train_data.shape[<span class="number">0</span>]</span><br><span class="line">    n1 = n2 = <span class="built_in">int</span>(math.sqrt(train_data.shape[<span class="number">1</span>]))</span><br><span class="line">    L = np.ones((n1, component1))</span><br><span class="line">    R = np.ones((n2, component2))</span><br><span class="line">    SW, SB = construct_graph(train_data, train_label, k, t)</span><br><span class="line">    <span class="comment"># solve for R</span></span><br><span class="line">    Rleft = np.zeros((n2, n2))</span><br><span class="line">    Rright = np.zeros((n2, n2))</span><br><span class="line">    Lleft = np.zeros((n2, n2))</span><br><span class="line">    Lright = np.zeros((n2, n2))</span><br><span class="line">    A = np.zeros((n, n, n1, n2))</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(n):</span><br><span class="line">        <span class="keyword">for</span> j <span class="keyword">in</span> <span class="built_in">range</span>(n):</span><br><span class="line">            A[i][j] = (train_data[i] - train_data[j]).reshape(n1, n2)</span><br><span class="line">    <span class="comment"># offset=10</span></span><br><span class="line">    <span class="comment"># while offset&gt;0.1:</span></span><br><span class="line">    <span class="keyword">for</span> z <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">2</span>):</span><br><span class="line">        last_R = R.copy()</span><br><span class="line">        last_L = L.copy()</span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(n):</span><br><span class="line">            <span class="keyword">for</span> j <span class="keyword">in</span> <span class="built_in">range</span>(n):</span><br><span class="line">                ATLLTA = ((A[i][j]).T) @ (L) @ (L.T) @ (A[i][j])</span><br><span class="line">                Rleft += SB[i][j] * (ATLLTA)</span><br><span class="line">                Rright += SW[i][j] * (ATLLTA)</span><br><span class="line">        eigVals, eigVects = scipy.linalg.eig(Rleft, Rright)</span><br><span class="line">        eigValInd = np.argsort(eigVals)</span><br><span class="line">        eigValInd = eigValInd[:(-component2 - <span class="number">1</span>):-<span class="number">1</span>]</span><br><span class="line">        R = eigVects[:, eigValInd]</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(n):</span><br><span class="line">            <span class="keyword">for</span> j <span class="keyword">in</span> <span class="built_in">range</span>(n):</span><br><span class="line">                ATRRTA = (A[i][j]) @ (R) @ (R.T) @ (A[i][j].T)</span><br><span class="line">                Lleft += SB[i][j] * (ATRRTA)</span><br><span class="line">                Lright += SW[i][j] * (ATRRTA)</span><br><span class="line">        eigVals, eigVects = scipy.linalg.eig(Lleft, Lright)</span><br><span class="line">        eigValInd = np.argsort(eigVals)</span><br><span class="line">        eigValInd = eigValInd[:(-component1 - <span class="number">1</span>):-<span class="number">1</span>]</span><br><span class="line">        L = eigVects[:, eigValInd]</span><br><span class="line">        offset = np.linalg.norm(np.squeeze(<span class="built_in">abs</span>(last_R) - <span class="built_in">abs</span>(R))) + np.linalg.norm(np.squeeze(np.<span class="built_in">abs</span>(last_L) - <span class="built_in">abs</span>(L)))</span><br><span class="line">        <span class="comment"># print(offset)</span></span><br><span class="line">    B = L.T @ data.reshape(-<span class="number">1</span>, n1, n2) @ R</span><br><span class="line">    <span class="keyword">return</span> B.reshape(data.shape[<span class="number">0</span>], -<span class="number">1</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">KernelLDE</span>(<span class="params">data, train_data, train_label, ker, component, k,t</span>):</span></span><br><span class="line">    SW, SB = construct_graph_01(train_data, train_label, k)</span><br><span class="line">    SW = np.array((SW, SW.T)).<span class="built_in">max</span>(axis=<span class="number">0</span>)</span><br><span class="line">    LW = Lap(SW)</span><br><span class="line">    SB = np.array((SB, SB.T)).<span class="built_in">max</span>(axis=<span class="number">0</span>)</span><br><span class="line">    LB = Lap(SB)</span><br><span class="line">    K = kernel(ker)(train_data, train_data,t)</span><br><span class="line">    KLWKT = K.T.dot(LW).dot(K)</span><br><span class="line">    KLBKT = K.T.dot(LB).dot(K)</span><br><span class="line">    KLWKT = KLWKT + np.exp(-<span class="number">5</span>) * np.eye(KLWKT.shape[<span class="number">0</span>])</span><br><span class="line">    T = scipy.linalg.inv(KLWKT).dot(KLBKT)</span><br><span class="line">    eigVals, eigVects = np.linalg.eigh(T)</span><br><span class="line">    eigValInd = np.argsort(eigVals)</span><br><span class="line">    eigValInd = eigValInd[:(-component - <span class="number">1</span>):-<span class="number">1</span>]</span><br><span class="line">    w = eigVects[:, eigValInd]</span><br><span class="line">    data_ndim = (kernel(ker)(data, train_data,t)) @ w</span><br><span class="line">    <span class="keyword">return</span> data_ndim</span><br></pre></td></tr></table></figure>
+<p>然后Kernel LDE可以有如下的：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> math</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">kernel</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span>(<span class="params">self, ker</span>):</span></span><br><span class="line">        self.ker = ker</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 线性核函数</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">linear</span>(<span class="params">self, x1, x2</span>):</span></span><br><span class="line">        <span class="keyword">return</span> x1 @ x2.T</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 多项式核</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">poly</span>(<span class="params">self, x1, x2</span>):</span></span><br><span class="line">        <span class="keyword">return</span> (x1 @ x2.T) ** <span class="number">2</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 高斯核</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">RBF</span>(<span class="params">self, x1, x2, t</span>):</span></span><br><span class="line">        <span class="keyword">return</span> math.exp(-(np.linalg.norm(x1 - x2)) / (t))</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">ori</span>(<span class="params">self, x1, x2</span>):</span></span><br><span class="line">        <span class="keyword">return</span> x1</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__call__</span>(<span class="params">self, *args, **kwargs</span>):</span></span><br><span class="line">        <span class="keyword">if</span> self.ker == <span class="string">&#x27;linear&#x27;</span>:</span><br><span class="line">            <span class="keyword">return</span> self.linear(*args, **kwargs)</span><br><span class="line">        <span class="keyword">if</span> self.ker == <span class="string">&#x27;poly&#x27;</span>:</span><br><span class="line">            <span class="keyword">return</span> self.poly(*args, **kwargs)</span><br><span class="line">        <span class="keyword">if</span> self.ker == <span class="string">&#x27;RBF&#x27;</span>:</span><br><span class="line">            <span class="keyword">return</span> self.RBF(*args, **kwargs)</span><br><span class="line">        <span class="keyword">if</span> self.ker == <span class="string">&#x27;&#x27;</span>:</span><br><span class="line">            <span class="keyword">return</span> self.ori(*args, **kwargs)</span><br></pre></td></tr></table></figure>
+<p>展示一些实验结果，主要是使用的数据集还是ORL人脸数据集，它由总共 400 张人脸图像组成，总共 40 人（每人 10 个样本）。</p>
+<p>使用九种方法用于对ORL进行降维。 降维后，我们对特征进行KNN（$k=3$）来计算分类精度。 LPP（LPP、2DLPP 和 Kernel LPP）和 LDE（LDE、2DLDE、Kernel LDE）的用户指定参数是分量 $d$、邻居 $k$ 和参数 $t$。</p>
+<p>更进一步，我们讨论了降维后维度对准确性的影响，参见图1：</p>
+<p><img src="/2022/01/16/%E5%AD%90%E7%A9%BA%E9%97%B4%E5%AD%A6%E4%B9%A0(6)-LDE/com.png" alt="LLE-Val" style="zoom:90%;"></p>
+<center style="color:#C0C0C0;text-decoration:underline">图1. 九种算法在ORL数据集上的实验结果。</center>
+此外，我们将讨论当 $Component$ 为 $20$ 时参数邻居 $k$ 和 参数 $t$ 的影响。 我们可视化这两个参数对准确性的影响，参见图2。
+<img src="/2022/01/16/%E5%AD%90%E7%A9%BA%E9%97%B4%E5%AD%A6%E4%B9%A0(6)-LDE/parameter.png" alt="LLE-Val" style="zoom:90%;">
+
+<center style="color:#C0C0C0;text-decoration:underline">图2. 参数变化对LDE和LPP算法的影响。</center>
+
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>当然实验结果不太对劲，估计还是参数有问题或者写丑了？由于那个年代的代码基本都是matlab的，我这里复现都是使用Python，有些优化应该不太到位，也没有去参考源码。</p>
+
+
+        <hr>
+        <!-- Pager -->
+        <ul class="pager">
+          
+          <li class="previous">
+            <a href="/2022/01/17/子空间学习(7)-Spectral Clustering and Normalized Cuts/" data-toggle="tooltip" data-placement="top" title="子空间学习(7)-Spectral Clustering and Normalized Cuts">&larr; Previous Post</a>
+          </li>
+          
+          
+          <li class="next">
+            <a href="/2022/01/15/子空间学习(5)-GE/" data-toggle="tooltip" data-placement="top" title="子空间学习(5)-GE">Next Post &rarr;</a>
+          </li>
+          
+        </ul>
+
+        
+        <!-- tip start -->
+        <!-- tip -->
+<!-- tip start -->
+<div class="tip">
+  <p>
+    
+      If you like this blog or find it useful for you, you are welcome to comment on it. You are also welcome to share this blog, so that more people can participate in it. If the images used in the blog infringe your copyright, please contact the author to delete them. Thank you !
+    
+  </p>
+</div>
+<!-- tip end -->
+
+        <!-- tip end -->
+        
+
+        
+        <!-- Sharing Srtart -->
+        <!-- Social Social Share Post -->
+<!-- Docs:https://github.com/overtrue/share.js -->
+
+<div class="social-share" data-initialized="true" data-disabled="tencent ,douban ,qzone ,linkedin ,facebook ,google ,diandian" data-wechat-qrcode-helper="" align="center">
+  <ul class="list-inline text-center social-share-ul">
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon icon-twitter">
+        <i class="fa fa-twitter fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a class="social-share-icon icon-wechat">
+        <i class="fa fa-weixin fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon icon-weibo">
+        <i class="fa fa-weibo fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon icon-qq">
+        <i class="fa fa-qq fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon" href="mailto:?subject=子空间学习(6)-LDE&body=Hi,I found this website and thought you might like it http://yoursite-url/2022/01/16/子空间学习(6)-LDE/">
+        <i class="fa fa-envelope fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+<!-- css & js -->
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css"> -->
+<script defer="defer" async="true" src="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
+
+        <!-- Sharing End -->
+        
+        <hr>
+
+        <!-- comments start -->
+        <!-- 1. gitalk comment -->
+
+  <!-- gitalk start -->
+  <!-- Docs:https://github.com/gitalk/gitalk/blob/master/readme-cn.md -->
+
+  <div id="gitalk-container"></div>
+
+  
+    <!-- <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.js"></script> -->
+    <script src="/js/comment/gitalk.js"></script>
+  
+
+  <script>
+    var gitalk = new Gitalk({
+      clientID: '65682c9d7fede4bb7fc5',
+      clientSecret: '6b9080be7fdcaae6ae9bbd667c4d2af5f16eb118',
+      repo: 'lhb7.github.io',
+      owner: 'lhb7',
+      admin: 'lhb7',
+      id: 'Sun Jan 16 2022 12:24:17 GMT+0800', // Ensure uniqueness and length less than 50
+      distractionFreeMode: false, // Facebook-like distraction free mode
+      perPage: 10,
+      pagerDirection: 'last',
+      createIssueManually: true,
+      language: 'zh-CN',
+      proxy: ''
+    });
+    gitalk.render('gitalk-container');
+
+    var gtFolded = () => {
+      setTimeout(function () {
+        let markdownBody = document.getElementsByClassName("markdown-body");
+        let list = Array.from(markdownBody);
+        list.forEach(item => {
+          if (item.clientHeight > 250) {
+            item.classList.add('gt-comment-body-folded');
+            item.style.maxHeight = '250px';
+            item.title = 'Click to Expand';
+            item.onclick = function () {
+              item.classList.remove('gt-comment-body-folded');
+              item.style.maxHeight = '';
+              item.title = '';
+              item.onclick = null;
+            };
+          }
+        })
+      }, 800);
+    }
+  </script>
+
+  <!-- gitalk end -->
+
+
+<!-- 2. gitment comment -->
+
+
+<!-- 3. disqus comment -->
+
+
+        <!-- comments end -->
+        <hr>
+
+      </div>
+
+      <!-- Catalog: Tabe of Content -->
+      <!-- Table of Contents -->
+
+    
+      <aside id="sidebar">
+        <div id="toc" class="toc-article">
+        <strong class="toc-title">Contents</strong>
+        
+          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#%E6%91%98%E8%A6%81%EF%BC%9A"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">摘要：</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#Fisherfaces"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">Fisherfaces</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#Fisher-criterion"><span class="toc-nav-number">2.1.</span> <span class="toc-nav-text">Fisher criterion</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#Motivation"><span class="toc-nav-number">2.2.</span> <span class="toc-nav-text">Motivation</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#Fisherface-vs-Eigenface"><span class="toc-nav-number">2.3.</span> <span class="toc-nav-text">Fisherface vs Eigenface</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#Mathematical-Details"><span class="toc-nav-number">2.4.</span> <span class="toc-nav-text">Mathematical Details</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#Local-Discriminant-Embedding"><span class="toc-nav-number">3.</span> <span class="toc-nav-text">Local Discriminant Embedding</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#LDE"><span class="toc-nav-number">3.1.</span> <span class="toc-nav-text">LDE</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#2DLDE"><span class="toc-nav-number">3.2.</span> <span class="toc-nav-text">2DLDE</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#Kernel-LDE"><span class="toc-nav-number">3.3.</span> <span class="toc-nav-text">Kernel LDE</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#%E6%8B%93%E5%B1%95LPP%E5%92%8CNPE"><span class="toc-nav-number">4.</span> <span class="toc-nav-text">拓展LPP和NPE</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#2DLPP"><span class="toc-nav-number">4.1.</span> <span class="toc-nav-text">2DLPP</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#Kernel-LPP"><span class="toc-nav-number">4.2.</span> <span class="toc-nav-text">Kernel LPP</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E6%8B%93%E5%B1%95NPE"><span class="toc-nav-number">4.3.</span> <span class="toc-nav-text">拓展NPE</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#%E8%AE%A8%E8%AE%BA"><span class="toc-nav-number">5.</span> <span class="toc-nav-text">讨论</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#%E5%AE%9E%E9%AA%8C%E7%BB%93%E6%9E%9C"><span class="toc-nav-number">6.</span> <span class="toc-nav-text">实验结果</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#%E6%80%BB%E7%BB%93"><span class="toc-nav-number">7.</span> <span class="toc-nav-text">总结</span></a></li></ol>
+        
+        </div>
+      </aside>
+    
+
+
+
+      <!-- Sidebar Container -->
+      <div class="
+                col-lg-8 col-lg-offset-1
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+        <!-- Featured Tags -->
+        
+        <section>
+          <!-- no hr -->
+          <h5>
+            <a href="/tags/">FEATURED TAGS</a>
+          </h5>
+          <div class="tags">
+            
+            <a class="tag" href="/tags/#Python" title="Python">Python</a>
+            
+          </div>
+        </section>
+        
+
+        <!-- Friends Blog -->
+        
+        <hr>
+        <h5>FRIENDS</h5>
+        <ul class="list-inline">
+
+          
+          <li>
+            <a href="https://soptq.me/" target="_blank">Soptq</a>
+          </li>
+          
+          <li>
+            <a href="http://beantech.org" target="_blank">Bean Tech</a>
+          </li>
+          
+        </ul>
+        
+      </div>
+    </div>
+  </div>
+</article>
+
+
+
+<!-- anchorjs start -->
+<!-- async load function -->
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script type="text/javascript">
+  // async load function
+  function async (u, c) {
+    var d = document,
+      t = 'script',
+      o = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+    o.src = u;
+    if (c) {
+      o.addEventListener('load', function(e) {
+        c(null, e);
+      }, false);
+    }
+    s.parentNode.insertBefore(o, s);
+  };
+</script>
+<script type="text/javascript">
+  //anchor-js, Doc:http://bryanbraun.github.io/anchorjs/
+  async ("https://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js", function() {
+    anchors.options = {
+      visible: 'hover',
+      placement: 'left',
+      // icon: 'ℬ'
+      icon: '❡'
+    };
+    anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+  });
+</script>
+<style>
+  /* place left on bigger screen */
+  @media all and (min-width: 800px) {
+    .anchorjs-link {
+      position: absolute;
+      left: -0.75em;
+      font-size: 1.1em;
+      margin-top: -0.1em;
+    }
+  }
+</style>
+
+<!-- anchorjs end -->
+
+
+
+		<!-- Footer (contains ThemeColor、viewer) -->
+		<!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center">
+          
+
+          
+            <li>
+              <a target="_blank" href="https://github.com/lhb7">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          
+
+          
+
+          
+
+          
+
+          
+
+          
+            <li>
+              <a target="_blank" href="https://www.zhihu.com/people/BinBin">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa  fa-stack-1x fa-inverse">知</i>
+                </span>
+              </a>
+            </li>
+          
+
+          
+
+        </ul>
+        <p class="copyright text-muted">
+          Copyright &copy;
+          Mr.Li
+          2022
+          <br>
+          Theme by
+          <a target="_blank" rel="noopener" href="http://beantech.org">BeanTech</a>
+          <span style="display: inline-block; margin: 0 5px;">
+            <i class="fa fa-heart"></i>
+          </span>
+          re-Ported by
+          <a target="_blank" rel="noopener" href="https://v-vincen.life/">Live My Life</a>
+          |
+          <iframe style="margin-left: 2px; margin-bottom:-5px;" frameborder="0" scrolling="0" width="91px" height="20px" src="https://ghbtns.com/github-btn.html?user=V-Vincen&repo=V-Vincen.github.io&type=star&count=true"></iframe>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<a id="rocket" href="#top" class=""></a>
+
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="/js/jquery.min.js"></script>
+  <!-- Bootstrap Core JavaScript -->
+  <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+  <!-- Custom Theme JavaScript -->
+  <script type="text/javascript" src="/js/hux-blog.min.js"></script>
+  <!-- catalog -->
+  <script async="true" type="text/javascript" src="/js/catalog.js"></script>
+  <!-- totop(rocket) -->
+  <script async="true" type="text/javascript" src="/js/totop.js"></script>
+
+  
+
+  
+    <!-- Scroll start -->
+    <script async="async" type="text/javascript" src="/js/scroll.js"></script>
+    <!-- Scroll end -->
+  
+
+  
+
+  
+    <!-- Mouseclick -->
+    <script type="text/javascript" src="/js/mouseclick.js" content='The first step is as good as half over...,Laugh and grow fat...,Man proposes God disposes...,When all else is lost the future still remains...,Wasting time is robbing oneself...,Sharp tools make good work...,Cease to struggle and you cease to live...,A friend in need is a friend indeed...,Faith can move mountains...' color='#9933CC,#339933,#66CCCC,#FF99CC,#CCCCFF,#6666CC,#663399,#66CC99,#FF0033'></script>
+  
+
+  
+    <!-- ribbon -->
+    <script type="text/javascript" src="/js/ribbonDynamic.js"></script>
+  
+
+  
+
+
+
+
+
+
+  <!-- viewer start -->
+  <!-- viewer start (Picture preview) -->
+  
+    <script async="async" type="text/javascript" src="/js/viewer/viewer.min.js"></script>
+    <script async="async" type="text/javascript" src="/js/viewer/pic-viewer.js"></script>
+  
+
+  <!-- viewer end -->
+
+
+<script>
+  // async load function
+  function async (u, c) {
+    var d = document,
+      t = 'script',
+      o = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+    o.src = u;
+    if (c) {
+      o.addEventListener('load', function (e) {
+        c(null, e);
+      }, false);
+    }
+    s.parentNode.insertBefore(o, s);
+  }
+
+  // fastClick.js
+  async ("https://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function () {
+    var $nav = document.querySelector("nav");
+    if ($nav)
+      FastClick.attach($nav);
+    }
+  )
+</script>
+
+<!-- Because of the native support for backtick-style fenced code blocks right within the Markdown is landed in Github Pages, From V1.6, There is no need for Highlight.js, so Huxblog drops it officially. -
+https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0 - https://help.github.com/articles/creating-and-highlighting-code-blocks/ -->
+<!-- <script> async ("http://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function () { hljs.initHighlightingOnLoad(); }) </script> <link href="http://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet"> -->
+
+<!-- jquery.tagcloud.js -->
+<!-- <script> // only load tagcloud.js in tag.html if ($('#tag_cloud').length !== 0) { async ("http://yoursite-url/js/jquery.tagcloud.js", function () { $.fn.tagcloud.defaults = { // size: { start: 1, end: 1, unit: 'em' }, color: {
+start: '#bbbbee', end: '#0085a1' } }; $('#tag_cloud a').tagcloud(); }) } </script> -->
+
+
+		<!-- Search -->
+		
+		<div class="popup search-popup local-search-popup">
+  <span class="popup-btn-close">
+    ESC
+  </span>
+  <div class="container">
+    <div class="row">
+      <!-- <div class="col-md-9 col-md-offset-1"> -->
+      <div class="col-lg-9 col-lg-offset-1 col-md-10 col-md-offset-1 local-search-content">
+
+        <div class="local-search-header clearfix">
+
+          <div class="local-search-input-wrapper">
+            <span class="search-icon">
+              <i class="fa fa-search fa-lg" style="margin: 25px 10px 25px 20px;"></i>
+            </span>
+            <input autocomplete="off" placeholder="SEARCH..." type="text" id="local-search-input">
+          </div>
+        </div>
+        <div id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  
+    <script src="/js/ziploader.js"></script>
+  
+  <script>
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.json";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    // monitor main search box;
+    var onPopupClose = function (e) {
+      $('.popup').fadeOut(300);
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $('.popup').fadeIn(300);
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+    // get search zip version
+    $.get('/searchVersion.json?t=' + (+new Date()), function (res) {
+      if (localStorage.getItem('searchVersion') !== res) {
+        localStorage.setItem('searchVersion', res);
+        initSearchJson();
+      }
+    });
+
+    function initSearchJson() {
+      initLoad(['/search.flv'], {
+        loadOptions: {
+          success: function (obj) {
+            localStorage.setItem('searchJson', obj['search.json'])
+          },
+          error: function (e) {
+            return console.log(e)
+          }
+        },
+        returnOptions: {
+          'json': TYPE_TEXT
+        },
+        mimeOptions: {
+          'json': 'application/json'
+        }
+      })
+    }
+    // search function;
+    var searchFunc = function (search_id, content_id) {
+      'use strict';
+      isfetched = true;
+      var datas = JSON.parse(localStorage.getItem('searchJson'));
+      // console.log(search_id)
+      var input = document.getElementById(search_id);
+      var resultContent = document.getElementById(content_id);
+      var inputEventFunction = function () {
+        var searchText = input.value.trim().toLowerCase();
+        var keywords = searchText.split(/[\s\-]+/);
+        if (keywords.length > 1) {
+          keywords.push(searchText);
+        }
+        var resultItems = [];
+        if (searchText.length > 0) {
+          // perform local searching
+          datas.forEach(function (data) {
+            var isMatch = false;
+            var hitCount = 0;
+            var searchTextCount = 0;
+            var title = data.title
+              ? data.title.trim()
+              : '';
+            var titleInLowerCase = title.toLowerCase();
+            var content = data.content
+              ? data.content.trim().replace(/<[^>]+>/g, "")
+              : '';
+            var contentInLowerCase = content.toLowerCase();
+            var articleUrl = decodeURIComponent(data.url);
+
+            var date = data.date;
+            var dateTime = date.replace(/T/, " ").replace(/.000Z/, "");
+            var imgUrl = data.header_img;
+            
+
+
+            var indexOfTitle = [];
+            var indexOfContent = [];
+            // only match articles with not empty titles
+            keywords.forEach(function (keyword) {
+              function getIndexByWord(word, text, caseSensitive) {
+                var wordLen = word.length;
+                if (wordLen === 0) {
+                  return [];
+                }
+                var startPosition = 0,
+                  position = [],
+                  index = [];
+                if (!caseSensitive) {
+                  text = text.toLowerCase();
+                  word = word.toLowerCase();
+                }
+                while ((position = text.indexOf(word, startPosition)) > -1) {
+                  index.push({position: position, word: word});
+                  startPosition = position + wordLen;
+                }
+                return index;
+              }
+              indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+              indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+            });
+            if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+              isMatch = true;
+              hitCount = indexOfTitle.length + indexOfContent.length;
+            }
+            // show search results
+            if (isMatch) {
+              // sort index by position of keyword
+              [indexOfTitle, indexOfContent].forEach(function (index) {
+                index.sort(function (itemLeft, itemRight) {
+                  if (itemRight.position !== itemLeft.position) {
+                    return itemRight.position - itemLeft.position;
+                  } else {
+                    return itemLeft.word.length - itemRight.word.length;
+                  }
+                });
+              });
+              // merge hits into slices
+              function mergeIntoSlice(text, start, end, index) {
+                var item = index[index.length - 1];
+                var position = item.position;
+                var word = item.word;
+                var hits = [];
+                var searchTextCountInSlice = 0;
+                while (position + word.length <= end && index.length != 0) {
+                  if (word === searchText) {
+                    searchTextCountInSlice++;
+                  }
+                  hits.push({position: position, length: word.length});
+                  var wordEnd = position + word.length;
+                  // move to next position of hit
+                  index.pop();
+                  while (index.length != 0) {
+                    item = index[index.length - 1];
+                    position = item.position;
+                    word = item.word;
+                    if (wordEnd > position) {
+                      index.pop();
+                    } else {
+                      break;
+                    }
+                  }
+                }
+                searchTextCount += searchTextCountInSlice;
+                return {hits: hits, start: start, end: end, searchTextCount: searchTextCountInSlice};
+              }
+              var slicesOfTitle = [];
+              if (indexOfTitle.length != 0) {
+                slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+              }
+              var slicesOfContent = [];
+              while (indexOfContent.length != 0) {
+                var item = indexOfContent[indexOfContent.length - 1];
+                var position = item.position;
+                var word = item.word;
+                // cut out 100 characters
+                var start = position - 20;
+                var end = position + 80;
+                if (start < 0) {
+                  start = 0;
+                }
+                if (end < position + word.length) {
+                  end = position + word.length;
+                }
+                if (end > content.length) {
+                  end = content.length;
+                }
+                slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+              }
+              // sort slices in content by search text's count and hits' count
+              slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                  return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                  return sliceRight.hits.length - sliceLeft.hits.length;
+                } else {
+                  return sliceLeft.start - sliceRight.start;
+                }
+              });
+              // select top N slices in content
+              var upperBound = parseInt('1');
+              if (upperBound >= 0) {
+                slicesOfContent = slicesOfContent.slice(0, upperBound);
+              }
+              // highlight title and content
+              function highlightKeyword(text, slice) {
+                var result = '';
+                var prevEnd = slice.start;
+                slice.hits.forEach(function (hit) {
+                  result += text.substring(prevEnd, hit.position);
+                  var end = hit.position + hit.length;
+                  result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                  prevEnd = end;
+                });
+                result += text.substring(prevEnd, slice.end);
+                return result;
+              }
+              var resultItem = '';
+
+              // if (slicesOfTitle.length != 0) {   resultItem += "<li><a target='_blank' href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>"; } else {   resultItem += "<li><a target='_blank' href='" +
+              // articleUrl + "' class='search-result-title'>" + title + "</a>"; } slicesOfContent.forEach(function (slice) {   resultItem += "<a target='_blank' href='" + articleUrl + "'><p class=\"search-result\">" + highlightKeyword(content, slice) +
+              // "...</p></a>"; }); resultItem += "</li>";
+
+              if (slicesOfTitle.length != 0) {
+                resultItem += "<a target='_blank' href='" + articleUrl + "' class='search-result'><div class='search-result-left'><div class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</div><time class='search-result-date'>" + dateTime + "</time>";
+              } else {
+                resultItem += "<a target='_blank' href='" + articleUrl + "' class='search-result'><div class='search-result-left'><div class='search-result-title'>" + title + "</div><time class='search-result-date'>" + dateTime + "</time>";
+              }
+              slicesOfContent.forEach(function (slice) {
+                resultItem += "<p class=\"search-result-content\">" + highlightKeyword(content, slice) + "...</p>";
+              });
+              resultItem += "</div><div class='search-result-right'><img class='media-image' src='" + imgUrl + "' width='64px' height='48px'></img></div></a>";
+
+              resultItems.push({item: resultItem, searchTextCount: searchTextCount, hitCount: hitCount, id: resultItems.length});
+            }
+          })
+        };
+
+        if (keywords.length === 1 && keywords[0] === "") {
+          resultContent.innerHTML = '<div id="no-result"></div>'
+        } else if (resultItems.length === 0) {
+          resultContent.innerHTML = '<div id="no-result"></div>'
+        } else {
+          resultItems.sort(function (resultLeft, resultRight) {
+            if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+              return resultRight.searchTextCount - resultLeft.searchTextCount;
+            } else if (resultLeft.hitCount !== resultRight.hitCount) {
+              return resultRight.hitCount - resultLeft.hitCount;
+            } else {
+              return resultRight.id - resultLeft.id;
+            }
+          });
+          var searchResultList = '<div class=\"search-result-list\">';
+          resultItems.forEach(function (result) {
+            searchResultList += result.item;
+          })
+          searchResultList += "</div>";
+          resultContent.innerHTML = searchResultList;
+        }
+      }
+      if ('auto' === 'auto') {
+        input.addEventListener('input', inputEventFunction);
+      } else {
+        $('.search-icon').click(inputEventFunction);
+        input.addEventListener('keypress', function (event) {
+          if (event.keyCode === 13) {
+            inputEventFunction();
+          }
+        });
+      }
+      // remove loading animation
+      $('body').css('overflow', '');
+      proceedsearch();
+    }
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function (e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc('local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function (e) {
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 && $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+
+    document.addEventListener('mouseup', (e) => {
+      var _con = document.querySelector(".local-search-content");
+      if (_con) {
+        if (!_con.contains(e.target)) {
+          onPopupClose();
+        }
+      }
+    });
+  </script>
+
+
+		
+	<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+</body>
+</html>
