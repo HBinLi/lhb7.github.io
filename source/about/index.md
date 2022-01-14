@@ -14,15 +14,13 @@ header-img: img/header_img/1.jpg
 
 所以故事从刚成年的夏天写起...
 
-18级四川大学计算机科学与技术（试验班）的混日子选手，目前在四川大学图形图像实验室和机器智能实验室下学习，完成一些比较基础的项目，暂时的研究方向为计算机视觉。
+18级四川大学计算机科学与技术（试验班）的混日子选手，目前在四川大学XLearning实验室下学习，完成一些比较基础的项目，暂时的研究方向为机器学习。
 
 
 
 ### 项目&研究经历
 
 * 物体目标识别与跟踪项目(计算机视觉，网络优化，模块融合) :
-
-  Vehicle Flow Detection Based on Improved Deep Structure and Deep Sort - ICMIP2021: **Haobin Li**, Zhang Yi
 
 * 基于PaddlePaddle 的野生东北虎识别平台(计算机视觉，网络优化，参数改进，迁移学习) :
 * Utooth-口腔健康小游戏(微信云数据库，游戏引擎) :
