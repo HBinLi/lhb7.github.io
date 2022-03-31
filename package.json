@@ -33,6 +33,6 @@
     "highlight.js": "^10.4.1",
     "leancloud-storage": "^4.10.1",
     "markdown-it-emoji": "^2.0.0",
-    "twemoji": "^13.1.0"
+    "twemoji": "^14.0.2"
   }
 }
