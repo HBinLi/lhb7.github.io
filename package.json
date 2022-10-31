@@ -31,7 +31,7 @@
     "hexo-server": "^2.0.0",
     "hexo-wordcount": "^6.0.1",
     "highlight.js": "^10.4.1",
-    "leancloud-storage": "^4.10.1",
+    "leancloud-storage": "^4.13.4",
     "markdown-it-emoji": "^2.0.0",
     "twemoji": "^13.1.0"
   }
